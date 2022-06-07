@@ -1,0 +1,603 @@
+/* 
+  Localizable.strings
+  99Names
+
+  Created by Sapar Jumabekov on 28.05.2022.
+  
+*/
+
+"zikrs" = "Zikrs";
+
+// number: 1
+"name_original_1" = "ٱلرَّحْمَـٰنُ";
+"name_transcription_1" = "Ar-Rahman";
+"name_translate_1" = "Милостивый";
+"name_description_1" = "Всеблагодетельный, Сострадательный. Господь обладает безграничной милостью, которую Аллах проявляет ко всем существам, вне зависимости от того, является человек верующим или неверующим";
+
+// number: 2
+"name_original_2" = "ٱلرَّحِيمُ";
+"name_transcription_2" = "Ар-Рах̣ӣм";
+"name_translate_2" = "Милосердный";
+"name_description_2" = "Творец проявляет милосердие по отношению ко всем, кто верит и поклоняется Ему";
+
+// number: 3
+"name_original_3" = "ٱلْمَـٰلِكُ";
+"name_transcription_3" = "Аль-Ма̄лик";
+"name_translate_3" = "Абсолютный Властитель";
+"name_description_3" = "Тот, Кто обладает абсолютным Могуществом. Характеризует Господа как Повелителя миров, обладающего абсолютной властью над всеми творениями";
+
+// number: 4
+"name_original_4" = "ٱلْقُدُّوسُ";
+"name_transcription_4" = "Аль-Куддус";
+"name_translate_4" = "Святой";
+"name_description_4" = "Тот, у Кого нет недостатков, не подобный никому и ничему. Создатель свободен от каких-либо недостатков и негативных черт, которые присущи людям";
+
+// number: 5
+"name_original_5" = "ٱلسَّلَـٰمُ";
+"name_transcription_5" = "Ас-Салям";
+"name_translate_5" = "Дарующий мир и благополучие";
+"name_description_5" = "Аллах есть источник мира и благополучия для людей уверовавших";
+
+// number: 6
+"name_original_6" = "ٱلْمُؤْمِنُ";
+"name_transcription_6" = "Аль-Му`мин";
+"name_translate_6" = "Дарующий стабильность и веру";
+"name_description_6" = "По воле Всевышнего вера появляется в душах людей и именно Господь является источником стабильности и безопасности";
+
+// number: 7
+"name_original_7" = "ٱلْمُهَيْمِنُ";
+"name_transcription_7" = "Аль-Мухаймин";
+"name_translate_7" = "Хранитель";
+"name_description_7" = "Создатель является попечителем верующих людей, оберегающим их";
+
+// number: 8
+"name_original_8" = "ٱلْعَزِيزُ";
+"name_transcription_8" = "Аль-Азиз";
+"name_translate_8" = "Могущественный";
+"name_description_8" = "Обладатель безграничного могущества";
+
+// number: 9
+"name_original_9" = "ٱلْجَبَّارُ";
+"name_transcription_9" = "Аль-Джаббар";
+"name_translate_9" = "Управляющий всеми, Подчиняющий";
+"name_description_9" = "Аллах способен любые творения подчинить Своей Воле";
+
+// number: 10
+"name_original_10" = "ٱلْمُتَكَبِّرُ";
+"name_transcription_10" = "Аль-Мутакаббир";
+"name_translate_10" = "Превосходящий";
+"name_description_10" = "Всевышний обладает безграничным величием и превосходством над всеми существами";
+
+// number: 11
+"name_original_11" = "ٱلْخَـٰلِقُ";
+"name_transcription_11" = "Аль-Халик";
+"name_translate_11" = "Творец";
+"name_description_11" = "Характеризует нашего Создателя как Творца всего сущего. Тот, Кто творит Вселенную из небытия";
+
+// number: 12
+"name_original_12" = "ٱلْبَارِئُ";
+"name_transcription_12" = "Аль-Бари";
+"name_translate_12" = "Создатель";
+"name_description_12" = "Господь является Создателем всего живого и не живого на планете. Тот, Кто имеет влияние на все существующее";
+
+// number: 13
+"name_original_13" = "ٱلْمُصَوِّرُ";
+"name_transcription_13" = "Аль-Мусаввир";
+"name_translate_13" = "Придающий всему форму и облик";
+"name_description_13" = "Именно Аллах по своему замыслу придает всем своим творениям определенный облик, форму и размер";
+
+// number: 14
+"name_original_14" = "ٱلْغَفَّـٰرُ";
+"name_transcription_14" = "Аль-Гаффар";
+"name_translate_14" = "Скрывающий чужие грехи";
+"name_description_14" = "Создатель скрывает грехи людей и покрывает их недостатки, которые впоследствии Аллах может простить";
+
+// number: 15
+"name_original_15" = "ٱلْقَهَّـٰرُ";
+"name_transcription_15" = "Аль-Каххар";
+"name_translate_15" = "Господствующий";
+"name_description_15" = "Аллах господствует над всем в обоих мирах";
+
+// number: 16
+"name_original_16" = "ٱلْوَهَّابُ";
+"name_transcription_16" = "Аль-Уаххаб";
+"name_translate_16" = "Дарующий";
+"name_description_16" = "Это имя служит доказательством того, что Творец дарует людям всё, в чём они нуждаются";
+
+// number: 17
+"name_original_17" = "ٱلرَّزَّاقُ";
+"name_transcription_17" = "Ар-Раззаку";
+"name_translate_17" = "Наделяющий";
+"name_description_17" = "Именно Создатель наделяет людей средствами, необходимыми для их существования";
+
+// number: 18
+"name_original_18" = "ٱلْفَتَّاحُ";
+"name_transcription_18" = "Аль-Фаттах";
+"name_translate_18" = "Раскрывающий";
+"name_description_18" = "Тот, Кто раскрывает скрытое, облегчает трудности, отводит их; Тот, у Кого ключи от сокровенных знаний и небесных благ. Он раскрывает сердца верующих для познания Его и любви к Нему, открывает нуждающимся врата для удовлетворения их потребностей";
+
+// number: 19
+"name_original_19" = "ٱلْعَلِيمُ";
+"name_transcription_19" = "Аль-Алим";
+"name_translate_19" = "Всезнающий";
+"name_description_19" = "Аллах обладает безграничным знанием в абсолютно всех сферах";
+
+// number: 20
+"name_original_20" = "ٱلْقَابِضُ";
+"name_transcription_20" = "Аль-Кабид";
+"name_translate_20" = "Уменьшающий блага";
+"name_description_20" = "Тот, кто по Своему справедливому порядку сужает (уменьшает) блага, кому хочет; Тот, кто удерживает души в Своей власти, подчинив их смерти, владеет благодеяниями Своих искренних рабов и принимает служения их, удерживает сердца грешников и лишает их возможности познать Его из-за их непокорности и высокомерия";
+
+// number: 21
+"name_original_21" = "ٱلْبَاسِطُ";
+"name_transcription_21" = "Аль-Баасит";
+"name_translate_21" = "Увеличивающий";
+"name_description_21" = "Всевышний многократно увеличивает награду за благие деяния людей";
+
+// number: 22
+"name_original_22" = "ٱلْخَافِضُ";
+"name_transcription_22" = "Аль-Хафид";
+"name_translate_22" = "Принижающий";
+"name_description_22" = "Тот, Кто принижает, кого пожелает наказанием";
+
+// number: 23
+"name_original_23" = "ٱلرَّافِعُ";
+"name_transcription_23" = "Ар-Рафи";
+"name_translate_23" = "Возвышающий";
+"name_description_23" = "Подтверждение того, что Господь возвышает наиболее достойных среди людей";
+
+// number: 24
+"name_original_24" = "ٱلْمُعِزُّ";
+"name_transcription_24" = "Аль-Муизз";
+"name_translate_24" = "Возвеличивающий";
+"name_description_24" = "Аллах возвеличивает и даёт силу тем, кому Он пожелает";
+
+// number: 25
+"name_original_25" = "ٱلْمُذِلُّ";
+"name_transcription_25" = "Аль-Муззиль";
+"name_translate_25" = "Ослабляющий";
+"name_description_25" = "Всевышний лишает силы и власти тех, кого пожелает";
+
+// number: 26
+"name_original_26" = "ٱلسَّمِيعُ";
+"name_transcription_26" = "Ас-Самиʼ";
+"name_translate_26" = "Всеслышащий";
+"name_description_26" = "Господь является тем, кто слышит абсолютно всё, включая всё кажущееся самым тихим и тайным";
+
+// number: 27
+"name_original_27" = "ٱلْبَصِيرُ";
+"name_transcription_27" = "Аль-Басыр";
+"name_translate_27" = "Всевидящий";
+"name_description_27" = "Аллах видит абсолютно всё. Даже чёрный муравей, располагающийся на черном камне, не скроется от взора Всевышнего";
+
+// number: 28
+"name_original_28" = "ٱلْحَكَمُ";
+"name_transcription_28" = "Аль-Хакам";
+"name_translate_28" = "Судья";
+"name_description_28" = "Создатель является наилучшим из судей, выносящим справедливые решения";
+
+// number: 29
+"name_original_29" = "ٱلْعَدْلُ";
+"name_transcription_29" = "Аль-Адль";
+"name_translate_29" = "Справедливый";
+"name_description_29" = "Творец справедлив абсолютно во всём. Он свободен от принятия несправедливых решений";
+
+// number: 30
+"name_original_30" = "ٱللَّطِيفُ";
+"name_transcription_30" = "Аль-Латиф";
+"name_translate_30" = "Понимающий";
+"name_description_30" = "Всевышний проявляет добро и милосердие в отношении Своих творений";
+
+// number: 31
+"name_original_31" = "ٱلْخَبِيرُ";
+"name_transcription_31" = "Аль-Хабир";
+"name_translate_31" = "Сведущий";
+"name_description_31" = "Господу миров известно всё явное и сокровенное, ничего от Него скрыть невозможно, так как Он сведущ абсолютно обо всём";
+
+// number: 32
+"name_original_32" = "ٱلْحَلِيمُ";
+"name_transcription_32" = "Аль-Халим";
+"name_translate_32" = "Сдержанный";
+"name_description_32" = "Аллах не наказывает Своих рабов сразу же после совершённого ими греха, давая нам шанс раскаяться и попросить прощения за свои проступки";
+
+// number: 33
+"name_original_33" = "ٱلْعَظِيمُ";
+"name_transcription_33" = "Аль-Азыйм";
+"name_translate_33" = "Величайший";
+"name_description_33" = "Величие Бога не имеет ни пределов, ни границ";
+
+// number: 34
+"name_original_34" = "ٱلْغَفُورُ";
+"name_transcription_34" = "Аль-Гафуур";
+"name_translate_34" = "Прощающий";
+"name_description_34" = "Всевышний способен прощать любые грехи Своим творениям";
+
+// number: 35
+"name_original_35" = "ٱلشَّكُورُ";
+"name_transcription_35" = "Аш-Шакур";
+"name_translate_35" = "Вознаграждающий";
+"name_description_35" = "Господь наделяет Своих рабов неисчисляемой наградой за благие деяния";
+
+// number: 36
+"name_original_36" = "ٱلْعَلِيُّ";
+"name_transcription_36" = "Аль-Алий";
+"name_translate_36" = "Всевышний";
+"name_description_36" = "Создатель не имеет ни конкурентов, ни сотоварищей, так как Его высочеству нет равных";
+
+// number: 37
+"name_original_37" = "ٱلْكَبِيرُ";
+"name_transcription_37" = "Аль-Кабир";
+"name_translate_37" = "Великий";
+"name_description_37" = "Наш Творец не нуждается ни в ком и ни в чём";
+
+// number: 38
+"name_original_38" = "ٱلْحَفِيظُ";
+"name_transcription_38" = "Аль-Хафиз";
+"name_translate_38" = "Хранитель";
+"name_description_38" = "Аллах является хранителем всего сущего";
+
+// number: 39
+"name_original_39" = "ٱلْمُقِيتُ";
+"name_transcription_39" = "Аль-Мукит";
+"name_translate_39" = "Поддерживающий";
+"name_description_39" = "Всевышний оказывает поддержку Своим рабам, обеспечивая их пропитанием";
+
+// number: 40
+"name_original_40" = "ٱلْحَسِيبُ";
+"name_transcription_40" = "Аль-Хасиб";
+"name_translate_40" = "Достаточный";
+"name_description_40" = "Аллаху присуща самодостаточность";
+
+// number: 41
+"name_original_41" = "ٱلْجَلِيلُ";
+"name_transcription_41" = "Аль-Джалиль";
+"name_translate_41" = "Обладающий величием";
+"name_description_41" = "Создатель обладает наилучшими качествами и истинным величием";
+
+// number: 42
+"name_original_42" = "ٱلْكَرِيمُ";
+"name_transcription_42" = "Аль-Карим";
+"name_translate_42" = "Щедрый";
+"name_description_42" = "Господь проявляет безграничную щедрость";
+
+// number: 43
+"name_original_43" = "ٱلرَّقِيبُ";
+"name_transcription_43" = "Ар-Ракиб";
+"name_translate_43" = "Наблюдающий";
+"name_description_43" = "Бог держит под бдительным вниманием все Свои творения";
+
+// number: 44
+"name_original_44" = "ٱلْمُجِيبُ";
+"name_transcription_44" = "Аль-Муджиб";
+"name_translate_44" = "Отзывчивый";
+"name_description_44" = "Всевышний отвечает на дуа, молитвы и просьбы Своих рабов";
+
+// number: 45
+"name_original_45" = "ٱلْوَٰسِعُ";
+"name_transcription_45" = "Аль-Уаси";
+"name_translate_45" = "Вездесущий";
+"name_description_45" = "Создатель не имеет пространственных ограничений, Он находится везде";
+
+// number: 46
+"name_original_46" = "ٱلْحَكِيمُ";
+"name_transcription_46" = "Аль-Хаким";
+"name_translate_46" = "Мудрый";
+"name_description_46" = "Господь является обладателем безграничной мудрости";
+
+// number: 47
+"name_original_47" = "الودود";
+"name_transcription_47" = "Аль-Уадуд";
+"name_translate_47" = "Любящий";
+"name_description_47" = "Всевышний любит все Свои творения";
+
+// number: 48
+"name_original_48" = "المجيد";
+"name_transcription_48" = "Аль-Маджид";
+"name_translate_48" = "Славный";
+"name_description_48" = "Творец обладает не имеющим границ благородством";
+
+// number: 49
+"name_original_49" = "الباعث";
+"name_transcription_49" = "Аль-Баʼис";
+"name_translate_49" = "Воскрешающий";
+"name_description_49" = "Он воскресит всех рабов Своих в Судный день";
+
+// number: 50
+"name_original_50" = "الشهيد";
+"name_transcription_50" = "Аш-Шахид";
+"name_translate_50" = "Свидетель";
+"name_description_50" = "Аллах является свидетелем всего происходящего";
+
+// number: 51
+"name_original_51" = "الحق";
+"name_transcription_51" = "Аль-Хакк";
+"name_translate_51" = "Истинный";
+"name_description_51" = "Всевышний есть истинный Властелин в обоих мирах";
+
+// number: 52
+"name_original_52" = "الوكيل";
+"name_transcription_52" = "Аль-Уакиль";
+"name_translate_52" = "Опекающий";
+"name_description_52" = "Лишь на Творца следует во всём полагаться, ибо этого будет достаточно для людей";
+
+// number: 53
+"name_original_53" = "القوى";
+"name_transcription_53" = "Аль-Каууий";
+"name_translate_53" = "Сильный";
+"name_description_53" = "Создатель обладает неограниченной ничем силой";
+
+// number: 54
+"name_original_54" = "المتين";
+"name_transcription_54" = "Аль-Матин";
+"name_translate_54" = "Непоколебимый";
+"name_description_54" = "Никто не способен изменить замыслы Аллаха и для их осуществления Он ни в ком и ни в чём не нуждается";
+
+// number: 55
+"name_original_55" = "الولى";
+"name_transcription_55" = "Аль-Уали";
+"name_translate_55" = "Спутник";
+"name_description_55" = "Аллах всегда рядом с теми, кто поклоняется лишь Ему и испытывает к Нему искреннюю любовь";
+
+// number: 56
+"name_original_56" = "الحميد";
+"name_transcription_56" = "Аль-Хамид";
+"name_translate_56" = "Достойный хвалы";
+"name_description_56" = "Всевышний достоин всех видов хвалы, благодаря Своему совершенству";
+
+// number: 57
+"name_original_57" = "المحصى";
+"name_transcription_57" = "Аль-Мухси";
+"name_translate_57" = "Учитывающий";
+"name_description_57" = "Наш Творец ведёт счёт всему и определяет для всего сущего определенные границы";
+
+// number: 58
+"name_original_58" = "المبدئ";
+"name_transcription_58" = "Аль-Мубди";
+"name_translate_58" = "Основатель";
+"name_description_58" = "То есть сотворивший всё сущее по Своему усмотрению не руководствовался каким бы то ни было образцом";
+
+// number: 59
+"name_original_59" = "المعيد";
+"name_transcription_59" = "Аль-Муʼид";
+"name_translate_59" = "Возвращающий всё живое к смерти, а затем вновь к жизни";
+"name_description_59" = "Аллах способен умерщвлять всё живое в этом мире, а затем вновь давать ему жизнь";
+
+// number: 60
+"name_original_60" = "المحيى";
+"name_transcription_60" = "Аль-Мухйи";
+"name_translate_60" = "Дарующий жизнь";
+"name_description_60" = "Создатель дарует жизнь кому пожелает";
+
+// number: 61
+"name_original_61" = "المميت";
+"name_transcription_61" = "Аль-Мумит";
+"name_translate_61" = "Дарующий смерть";
+"name_description_61" = "Аллах умерщвляет того, кого пожелает";
+
+// number: 62
+"name_original_62" = "الحي";
+"name_transcription_62" = "Аль-Хаййи";
+"name_translate_62" = "Обладающий вечной жизнью";
+"name_description_62" = "Всевышний не имеет временных ограничений, так как Он вечен";
+
+// number: 63
+"name_original_63" = "القيوم";
+"name_transcription_63" = "Аль-Кайум";
+"name_translate_63" = "Поддерживающий жизнь";
+"name_description_63" = "Господь не зависит ни от кого и ни от чего. Он является источником поддержания жизни на планете";
+
+// number: 64
+"name_original_64" = "الواجد";
+"name_transcription_64" = "Аль-Уаджид";
+"name_translate_64" = "Совершающий всё, что пожелает";
+"name_description_64" = "Наш Творец обладает абсолютной властью над всем";
+
+// number: 65
+"name_original_65" = "الماجد";
+"name_transcription_65" = "Аль-Мааджид";
+"name_translate_65" = "Наиславнейший";
+"name_description_65" = "Это имя переводится с арабского также как «Обладающий неограниченным величием», то есть никто не способен сравниться с Аллахом по этому признаку";
+
+// number: 66
+"name_original_66" = "الواحد";
+"name_transcription_66" = "Аль-Уахид";
+"name_translate_66" = "Единственный";
+"name_description_66" = "Он является Единственным Богом, достойным поклонения";
+
+// number: 67
+"name_original_67" = "الأحد";
+"name_transcription_67" = "Аль-Ахад";
+"name_translate_67" = "Единый";
+"name_description_67" = "Нераздельный. Нет никого кроме него и никого равного ему";
+
+// number: 68
+"name_original_68" = "الصمد";
+"name_transcription_68" = "Ас-Самад";
+"name_translate_68" = "Самодостаточный";
+"name_description_68" = "Аллах не испытывает нужды ни в ком и ни в чём, поскольку обладает всем в достатке";
+
+// number: 69
+"name_original_69" = "القادر";
+"name_transcription_69" = "Аль-Кадир";
+"name_translate_69" = "Могучий";
+"name_description_69" = "Создатель способен сотворить всё из ничего и может уничтожить всё";
+
+// number: 70
+"name_original_70" = "المقتدر";
+"name_transcription_70" = "Аль-Муктадир";
+"name_translate_70" = "Делающий всё наилучшим образом";
+"name_description_70" = "Господь устроил всё в обоих мирах наилучшим образом, причём никто больше не способен повторить это";
+
+// number: 71
+"name_original_71" = "المقدم";
+"name_transcription_71" = "Аль-Мукаддим";
+"name_translate_71" = "Продвигающий";
+"name_description_71" = "Всевышний даёт возможность продвинуться вперёд наилучшим из людей";
+
+// number: 72
+"name_original_72" = "المؤخر";
+"name_transcription_72" = "Аль-Муаххир";
+"name_translate_72" = "Отодвигающий";
+"name_description_72" = "Творец может отдалять тех, кого пожелает";
+
+// number: 73
+"name_original_73" = "الأول";
+"name_transcription_73" = "Аль-Аууаль";
+"name_translate_73" = "Не имеющий начала";
+"name_description_73" = "Аллах существовал всегда, Он не имеет начала";
+
+// number: 74
+"name_original_74" = "الأخر";
+"name_transcription_74" = "Аль-Ахир";
+"name_translate_74" = "Не имеющий конца";
+"name_description_74" = "Создатель будет существовать вечно, он не имеет конца";
+
+// number: 75
+"name_original_75" = "الظاهر";
+"name_transcription_75" = "Аз-Захир";
+"name_translate_75" = "Явный";
+"name_description_75" = "Его существование является очевидным, доказательством чему служат многие Его знамения";
+
+// number: 76
+"name_original_76" = "الباطن";
+"name_transcription_76" = "Аль-Батын";
+"name_translate_76" = "Скрытый";
+"name_description_76" = "Господь скрыт от нашего взора в земной жизни";
+
+// number: 77
+"name_original_77" = "الوالي";
+"name_transcription_77" = "Аль-Уалий";
+"name_translate_77" = "Правитель";
+"name_description_77" = "Он является правителем для всего сущего";
+
+// number: 78
+"name_original_78" = "المتعالي";
+"name_transcription_78" = "Аль-Мутаʼали";
+"name_translate_78" = "Свободный от недостатков";
+"name_description_78" = "Творец выше всех недостатков, характерных для людей";
+
+// number: 79
+"name_original_79" = "البر";
+"name_transcription_79" = "Аль-Барр";
+"name_translate_79" = "Добродетельный";
+"name_description_79" = "Аллах обладает безграничной добродетелью по отношению ко всем без исключения Своим созданиям";
+
+// number: 80
+"name_original_80" = "التواب";
+"name_transcription_80" = "Ат-Таууаб";
+"name_translate_80" = "Принимающий покаяния";
+"name_description_80" = "Господь прощает грехи людей, искренне раскаявшихся в содеянном";
+
+// number: 81
+"name_original_81" = "المنتقم";
+"name_transcription_81" = "Аль-Мунтакыйм";
+"name_translate_81" = "Карающий непокорных";
+"name_description_81" = "Он подвергает суровому наказанию грешников, творивших бесчинства в земной жизни";
+
+// number: 82
+"name_original_82" = "العفو";
+"name_transcription_82" = "Аль-ʼАфуу";
+"name_translate_82" = "Прощающий грехи";
+"name_description_82" = "Создатель прощает тех людей, что покаялись и отстранились от совершения греховного поступка";
+
+// number: 83
+"name_original_83" = "الرؤوف";
+"name_transcription_83" = "Ар-Рауф";
+"name_translate_83" = "Снисходительный";
+"name_description_83" = "Аллах проявляет сострадание по отношению к Своим рабам через прощение их грехов и наделение Своей милостью";
+
+// number: 84
+"name_original_84" = "مالك الملك";
+"name_transcription_84" = "Маликуль-Мульк";
+"name_translate_84" = "Повелитель над повелителями";
+"name_description_84" = "Лишь Он является единственным Властелином всего сущего, и в этом качестве никто не способен с ним сравниться";
+
+// number: 85
+"name_original_85" = "ذُو ٱلْجَلَـٰلِ وَٱلْإِكْرَامِ";
+"name_transcription_85" = "Зуль-Джаляли уаль-Икрам";
+"name_translate_85" = "Обладатель Величия и Щедрости";
+"name_description_85" = "Всё возможное величие принадлежит лишь Ему и все акты щедрости исходят лишь от Аллаха";
+
+// number: 86
+"name_original_86" = "المقسط";
+"name_transcription_86" = "Аль-Муксит";
+"name_translate_86" = "Справедливый";
+"name_description_86" = "Он Тот, Кто принимает исключительно справедливые решения";
+
+// number: 87
+"name_original_87" = "الجامع";
+"name_transcription_87" = "Аль-Джамиʼ";
+"name_translate_87" = "Объединяющий";
+"name_description_87" = "Господь объединяет всех Своих рабов, собирая их в одном месте";
+
+// number: 88
+"name_original_88" = "الغني";
+"name_transcription_88" = "Аль-Ганий";
+"name_translate_88" = "Обеспеченный всем необходимым";
+"name_description_88" = "Аллах обладает самыми разнообразными богатствами и в силу этого ни в ком и ни в чём не нуждается";
+
+// number: 89
+"name_original_89" = "المغني";
+"name_transcription_89" = "Аль-Мугний";
+"name_translate_89" = "Дарующий богатства";
+"name_description_89" = "Он обогащает любого, кого пожелает";
+
+// number: 90
+"name_original_90" = "المانع";
+"name_transcription_90" = "Аль-Маниʼ";
+"name_translate_90" = "Ограждающий";
+"name_description_90" = "Творец ограждает от благ тех, кого пожелает";
+
+// number: 91
+"name_original_91" = "الضار";
+"name_transcription_91" = "Ад-Дарр";
+"name_translate_91" = "Способный наслать бедствие";
+"name_description_91" = "Посылает беды и горе тем, кому считает нужным";
+
+// number: 92
+"name_original_92" = "النافع";
+"name_transcription_92" = "Ан-Нафиʼ";
+"name_translate_92" = "Приносящий пользу";
+"name_description_92" = "Аллах приносит пользу всем, кому пожелает";
+
+// number: 93
+"name_original_93" = "النور";
+"name_transcription_93" = "Ан-Нур";
+"name_translate_93" = "Просветляющий";
+"name_description_93" = "Господь освещает людям истинный путь, даруя им свет веры";
+
+// number: 94
+"name_original_94" = "الهادي";
+"name_transcription_94" = "Аль-Хадий";
+"name_translate_94" = "Направляющий";
+"name_description_94" = "Аллах направляет и ведёт истинным путём Свои творения";
+
+// number: 95
+"name_original_95" = "البديع";
+"name_transcription_95" = "Аль-Бадиʼ";
+"name_translate_95" = "Создающий в прекрасном облике";
+"name_description_95" = "Он придал всем творениям прекрасный облик и создал их наилучшим возможным образом";
+
+// number: 96
+"name_original_96" = "الباقي";
+"name_transcription_96" = "Аль-Бакый";
+"name_translate_96" = "Вечный";
+"name_description_96" = "Господь не имеет временных границ";
+
+// number: 97
+"name_original_97" = "الوارث";
+"name_transcription_97" = "Аль-Уарис";
+"name_translate_97" = "Наследник";
+"name_description_97" = "Он является Наследником всего сущего";
+
+// number: 98
+"name_original_98" = "الرشيد";
+"name_transcription_98" = "Ар-Рашид";
+"name_translate_98" = "Направляющий на путь истины";
+"name_description_98" = "Создатель ведёт верным либо заблудшим путём любого, кого пожелает";
+
+// number: 99
+"name_original_99" = "الصبور";
+"name_transcription_99" = "Ас-Сабур";
+"name_translate_99" = "Терпеливейший";
+"name_description_99" = "Аллах обладает безграничным терпением";

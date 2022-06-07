@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core",
+      "state" : {
+        "revision" : "9e2f3cb730a546ff33e95c563a85e3cf61f17d17",
+        "version" : "12.0.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift",
+      "state" : {
+        "revision" : "0762a9eb77929fdfbefa476ae62afed2b3e41bae",
+        "version" : "10.27.0"
+      }
+    },
+    {
+      "identity" : "spconfetti",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ivanvorobei/SPConfetti",
+      "state" : {
+        "revision" : "257a8674c62212a3919abd1f9cb31dc2fc7b0992",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "stevia",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/freshOS/Stevia",
+      "state" : {
+        "revision" : "cfb1a1d2159277bb553c3dc46f3f742c0275566d",
+        "version" : "5.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}
