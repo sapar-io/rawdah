@@ -24,6 +24,15 @@ final class SettingsCell: UITableViewCell {
         return label
     }()
     
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [iconImageView, label])
+        stackView.alignment = .center
+        stackView.axis = .horizontal
+        stackView.spacing = 10
+        stackView.distribution = .fill
+        return stackView
+    }()
+    
     // MARK: - Init
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,14 +60,10 @@ final class SettingsCell: UITableViewCell {
         label.text = model.title
         iconImageView.image = model.icon
     }
-}
-
-// MARK: - Layout
-extension SettingsCell {
+    
+    // MARK: - Layout
     private func setupConstraints() {
-        contentView.subviews(iconImageView, label)
-        iconImageView.size(24).centerVertically().left(20)
-        label.Left == iconImageView.Right + 10
-        label.centerVertically().right(15)
+        contentView.subviews(stackView)
+        stackView.left(20).centerVertically()
     }
 }

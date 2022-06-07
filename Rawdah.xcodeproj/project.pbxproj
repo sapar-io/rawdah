@@ -38,6 +38,8 @@
 		524AEBFC2843858E006D823C /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 524AEBFB2843858E006D823C /* Stevia */; };
 		526ED736284F828C005E4686 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED735284F828C005E4686 /* UIFont+Extensions.swift */; };
 		526ED737284F8EB5005E4686 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 526ED739284F8EB5005E4686 /* Localizable.strings */; };
+		526ED73D284F9D0F005E4686 /* Bundle+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED73C284F9D0F005E4686 /* Bundle+Extenstions.swift */; };
+		526ED741284F9F98005E4686 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED740284F9F98005E4686 /* InitialViewController.swift */; };
 		52900CE6284EBD090023A998 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52900CE5284EBD090023A998 /* IAPManager.swift */; };
 		529E2DF62843832600974B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF52843832600974B1E /* AppDelegate.swift */; };
 		529E2DF82843832600974B1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF72843832600974B1E /* SceneDelegate.swift */; };
@@ -85,8 +87,11 @@
 		524AEBFD28438630006D823C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		526ED735284F828C005E4686 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		526ED738284F8EB5005E4686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		526ED73A284F8EB6005E4686 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		526ED73B284F8EB7005E4686 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		526ED73C284F9D0F005E4686 /* Bundle+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extenstions.swift"; sourceTree = "<group>"; };
+		526ED73E284F9EE8005E4686 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		526ED73F284F9F02005E4686 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		526ED740284F9F98005E4686 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		52900CE5284EBD090023A998 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		529E2DF22843832600974B1E /* Rawdah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rawdah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E2DF52843832600974B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +102,6 @@
 		52AF78F028452F3900DA424B /* TopicClosedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicClosedView.swift; sourceTree = "<group>"; };
 		52BD8214284412B9000A9E61 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		52F102082846571400ED57B2 /* QuizTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTestView.swift; sourceTree = "<group>"; };
-		52F54A802843867800F2DC0A /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */,
 				524AEBC12843844D006D823C /* String + Extensions.swift */,
 				52900CE5284EBD090023A998 /* IAPManager.swift */,
+				526ED73C284F9D0F005E4686 /* Bundle+Extenstions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		524AEBBC28438429006D823C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				526ED740284F9F98005E4686 /* InitialViewController.swift */,
 				524AEBC828438475006D823C /* TabBarController.swift */,
 				524AEBCA28438479006D823C /* Home */,
 				524AEBCB2843847E006D823C /* Topic */,
@@ -429,9 +435,11 @@
 				52BD8215284412B9000A9E61 /* RealmDB.swift in Sources */,
 				5218F0F6284E614B00DFDFF5 /* QuizProgressView.swift in Sources */,
 				524AEBEE2843850F006D823C /* ZikrsViewController.swift in Sources */,
+				526ED741284F9F98005E4686 /* InitialViewController.swift in Sources */,
 				5218F0F8284E71D000DFDFF5 /* TrueFalseTestView.swift in Sources */,
 				526ED736284F828C005E4686 /* UIFont+Extensions.swift in Sources */,
 				524AEBC32843844D006D823C /* UITableViewCell + Extensions.swift in Sources */,
+				526ED73D284F9D0F005E4686 /* Bundle+Extenstions.swift in Sources */,
 				524AEBC72843846D006D823C /* Names.swift in Sources */,
 				524AEBC52843844D006D823C /* UICollectionViewCell + Extensions.swift in Sources */,
 				529E2DF62843832600974B1E /* AppDelegate.swift in Sources */,
@@ -452,8 +460,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				526ED738284F8EB5005E4686 /* en */,
-				526ED73A284F8EB6005E4686 /* kk */,
 				526ED73B284F8EB7005E4686 /* ru */,
+				526ED73F284F9F02005E4686 /* kk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -463,7 +471,7 @@
 			children = (
 				529E2E012843832700974B1E /* Base */,
 				524AEBFD28438630006D823C /* ru */,
-				52F54A802843867800F2DC0A /* kk */,
+				526ED73E284F9EE8005E4686 /* kk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

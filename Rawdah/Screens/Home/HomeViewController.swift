@@ -134,8 +134,10 @@ extension HomeViewController {
     }
     
     @objc private func settingDidTapped() {
-        let vc = UINavigationController(rootViewController: SettingsViewController())
-        navigationController?.present(vc, animated: true)
+        let vc = SettingsViewController()
+        vc.delegate = self
+        let nav = UINavigationController(rootViewController: vc)
+        navigationController?.present(nav, animated: true)
     }
 }
 
@@ -214,5 +216,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             vc.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+}
+
+// MARK: - Settings Delegate
+extension HomeViewController: SettingsViewControllerDelegate {
+    func languageChanged() {
+        tabBarController?.navigationController?.popViewController(animated: true)
     }
 }

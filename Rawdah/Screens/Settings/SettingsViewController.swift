@@ -31,10 +31,15 @@ struct SettingsSwitchOption {
     var isOn: Bool
 }
 
+protocol SettingsViewControllerDelegate: AnyObject {
+    func languageChanged()
+}
+
 class SettingsViewController: UIViewController {
     
     // MARK: - Variables
     private var models = [SettingsSection]()
+    weak var delegate: SettingsViewControllerDelegate?
 
     // MARK: - Outlets
     private lazy var tableView: UITableView = {
@@ -64,32 +69,49 @@ class SettingsViewController: UIViewController {
         let instaUrl = URL(string: "https://stackoverflow.com/")
         
         models.append(SettingsSection(title: "settings_support".localized, options: [
-            SettingsOption(title: "sapar@startcode.io", icon: UIImage(systemName: "gear")) {
+            SettingsOption(title: "sapar@startcode.io", icon: UIImage(systemName: "envelope")) {
                 UIApplication.shared.open(URL(string: "mailto:sapar@startcode.io")!)
             },
-            SettingsOption(title: "settings_policy".localized, icon: UIImage(systemName: "gear")) {
+            SettingsOption(title: "settings_policy".localized, icon: UIImage(systemName: "lock.shield")) {
                 guard let url = polUrl, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             },
-            SettingsOption(title: "settings_agreement".localized, icon: UIImage(systemName: "gear")) {
+            SettingsOption(title: "settings_agreement".localized, icon: UIImage(systemName: "doc.text")) {
                 guard let url = sogUrl, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             }
         ]))
         
+        models.append(SettingsSection(title: "settings_languages".localized, options: [
+            SettingsOption(title: "🇰🇿 Қазақша".localized, icon: nil) {
+                self.changeLanguage("kk")
+            },
+            SettingsOption(title: "🇷🇺 Русский", icon: nil) {
+                self.changeLanguage("ru")
+            },
+            SettingsOption(title: "🇬🇧 English".localized, icon: nil) {
+                self.changeLanguage("en")
+            }
+        ]))
+        
         models.append(SettingsSection(title: "settings_others".localized, options: [
-            SettingsOption(title: "Instagram", icon: UIImage(systemName: "gear")) {
+            SettingsOption(title: "Instagram", icon: UIImage(systemName: "camera")) {
                 guard let url = instaUrl, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             }
         ]))
         tableView.reloadData()
     }
+    
+    private func changeLanguage(_ lang: String) {
+        dismiss(animated: true)
+        Bundle.setLanguage(lang: lang)
+        delegate?.languageChanged()
+    }
 }
 
 // MARK: - Setup
 extension SettingsViewController {
-    
     private func setup() {
         navigationItem.title = "settings_title".localized
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"),

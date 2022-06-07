@@ -66,7 +66,6 @@ class NameView: UIView {
     
     // MARK: - Configure
     func configure(name: Name, isFinish: Bool) {
-        print(name.number)
         originalLabel.text = name.original
         transcriptionLabel.text = "\(name.number). \(name.transcription)"
         translateLabel.text = name.translate
