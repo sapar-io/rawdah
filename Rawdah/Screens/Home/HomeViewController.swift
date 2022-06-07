@@ -49,6 +49,14 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
     
+    func backToTopics() {
+        guard currentContent == .names else {
+            return
+        }
+        
+        changeContentTapped()
+    }
+    
     // MARK: - Private Methods
     private func calculateTopicPercentages() {
         learnedNamesInTopic = [:]
@@ -116,7 +124,8 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     @objc private func changeContentTapped() {
         currentContent = currentContent == .topics ? .names : .topics
-        let rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: currentContent == .topics ? "list.number" : "folder"),
+        let image = UIImage(systemName: currentContent == .topics ? "list.number" : "folder")
+        let rightBarButtonItem = UIBarButtonItem(image: image,
                                                  style: .done,
                                                  target: self,
                                                  action: #selector(changeContentTapped))
@@ -133,7 +142,7 @@ extension HomeViewController {
 // MARK: - Setups
 extension HomeViewController {
     private func setup() {
-        navigationItem.title = "99 имен Аллаха"
+        navigationItem.title = "home_title".localized
         view.backgroundColor = .systemBackground
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName:  "list.number"),
                                                             style: .done,

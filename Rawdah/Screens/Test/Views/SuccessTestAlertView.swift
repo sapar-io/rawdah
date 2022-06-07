@@ -40,7 +40,7 @@ class SuccessTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Да будет доволен вами Аллах и наградит вас благами в обоих мирах"
+        label.text = "test_success_first_text".localized
         return label
     }()
     
@@ -48,7 +48,7 @@ class SuccessTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Вы успешно сдали тест и присоединились к 824’930 людям, которые выучили \(index.0)-\(index.1) имена Аллаха"
+        label.text = String(format: "test_success_second_text".localized, String(index.0), String(index.1))
         return label
     }()
     
@@ -56,14 +56,14 @@ class SuccessTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Вам осталось выучить \(99 - index.1) имен"
+        label.text = String(format: "test_success_third_text".localized, String(99 - index.1))
         return label
     }()
     
     private lazy var nextButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemGreen
-        button.setTitle("Далее", for: [])
+        button.setTitle("test_success_next_button".localized, for: [])
         button.setTitleColor(.white, for: [])
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .caption2)
         button.titleLabel?.numberOfLines = 0
@@ -77,7 +77,7 @@ class SuccessTestAlertView: UIView {
     
     private lazy var shareButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.setImage(UIImage(systemName: "square.and.arrow.up"), for: [])
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .caption2)
         button.titleLabel?.numberOfLines = 0

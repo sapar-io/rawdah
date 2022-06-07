@@ -38,7 +38,8 @@ class TestViewController: UIViewController {
         button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
-        button.setTitle("Следующий вопрос", for: [])
+        button.setTitle("test_next_button".localized, for: [])
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
         button.isHidden = true
         button.addTarget(self, action: #selector(nextDidTapped), for: .touchUpInside)
         return button
@@ -86,6 +87,12 @@ class TestViewController: UIViewController {
     // MARK: - Actions
     @objc
     private func nextDidTapped(_ sender: Any) {
+        if testNumber == 26 {
+            nextButton.isHidden = true
+            showResult()
+            return
+        }
+        
         nextButton.isHidden = true
         quizView.isUserInteractionEnabled = true
         trueFalseTestView.isUserInteractionEnabled = true
@@ -122,8 +129,8 @@ class TestViewController: UIViewController {
         
         if errorCounter > 0 {
             errorView.isHidden = false
-            errorView.successLabel.text = "Правильных ответов: \(successCounter)"
-            errorView.errorLabel.text = "Неправильных ответов: \(errorCounter)"
+            errorView.successLabel.text = String(format: "test_error_correct".localized, String(successCounter))
+            errorView.errorLabel.text = String(format: "test_error_mistake".localized, String(errorCounter))
         } else {
             SPConfetti.startAnimating(.centerWidthToDown, particles: [.triangle, .arc, .circle, .polygon], duration: 5)
             successView.isHidden = false
@@ -135,7 +142,7 @@ class TestViewController: UIViewController {
     
     // MARK: - Setup
     private func setup() {
-        navigationItem.title = "Тест по имёнам \(index.0) - \(index.1)"
+        navigationItem.title = "test_title".localized + "\(index.0) - \(index.1)"
         view.backgroundColor = .systemBackground
         
         view.subviews(progressView, quizView, trueFalseTestView, nextButton, successView, errorView)
@@ -179,7 +186,8 @@ extension TestViewController: QuizTestDelegate, TrueFalseTestDelegate {
         }
         
         if testNumber == 26 {
-            showResult()
+            nextButton.setTitle("test_finish".localized, for: [])
+            nextButton.isHidden = false
             return
         }
         

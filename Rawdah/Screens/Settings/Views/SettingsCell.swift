@@ -11,7 +11,6 @@ import Stevia
 final class SettingsCell: UITableViewCell {
     
     // MARK: - Views
-    
     private let iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.tintColor = .systemGreen
@@ -52,17 +51,14 @@ final class SettingsCell: UITableViewCell {
         label.text = model.title
         iconImageView.image = model.icon
     }
-    
 }
 
 // MARK: - Layout
 extension SettingsCell {
-    
     private func setupConstraints() {
         contentView.subviews(iconImageView, label)
         iconImageView.size(24).centerVertically().left(20)
         label.Left == iconImageView.Right + 10
         label.centerVertically().right(15)
     }
-    
 }

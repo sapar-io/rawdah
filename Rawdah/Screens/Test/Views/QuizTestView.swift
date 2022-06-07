@@ -336,13 +336,13 @@ class QuizTestView: UIView {
     private func setupConstraints() {
         subviews(originalLabel, transcriptionLabel, firstDividerView, counterStackView, secondDividerView, allButtonsStackView)
         
-        originalLabel.Top == safeAreaLayoutGuide.Top + 48
+        originalLabel.Top == safeAreaLayoutGuide.Top + 32
         originalLabel.centerHorizontally()
         
         transcriptionLabel.Top == originalLabel.Bottom + 16
         transcriptionLabel.centerHorizontally()
         
-        firstDividerView.Top == transcriptionLabel.Bottom + 48
+        firstDividerView.Top == transcriptionLabel.Bottom + 24
         firstDividerView.fillHorizontally().height(1)
         
         counterStackView.Top == firstDividerView.Bottom + 16
@@ -351,12 +351,12 @@ class QuizTestView: UIView {
         secondDividerView.Top == counterStackView.Bottom + 16
         secondDividerView.fillHorizontally().height(1)
         
-        allButtonsStackView.Top == secondDividerView.Bottom + 48
+        allButtonsStackView.Top == secondDividerView.Bottom + 24
         allButtonsStackView.fillHorizontally(padding: 16)
         
-        firstOptionButton.height(70)
-        secondOptionButton.height(70)
-        thirdOptionButton.height(70)
-        forthOptionButton.height(70)
+        firstOptionButton.height(100)
+        secondOptionButton.height(100)
+        thirdOptionButton.height(100)
+        forthOptionButton.height(100)
     }
 }

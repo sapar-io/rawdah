@@ -63,21 +63,21 @@ class SettingsViewController: UIViewController {
         let sogUrl = URL(string: "https://stackoverflow.com/")
         let instaUrl = URL(string: "https://stackoverflow.com/")
         
-        models.append(SettingsSection(title: "Поддержка", options: [
-            SettingsOption(title: "info@wanty.io", icon: UIImage(systemName: "gear")) {
-                UIApplication.shared.open(URL(string: "mailto:info@wanty.io")!)
+        models.append(SettingsSection(title: "settings_support".localized, options: [
+            SettingsOption(title: "sapar@startcode.io", icon: UIImage(systemName: "gear")) {
+                UIApplication.shared.open(URL(string: "mailto:sapar@startcode.io")!)
             },
-            SettingsOption(title: "Политика конфиденциальности", icon: UIImage(systemName: "gear")) {
+            SettingsOption(title: "settings_policy".localized, icon: UIImage(systemName: "gear")) {
                 guard let url = polUrl, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             },
-            SettingsOption(title: "Пользовательское соглашение", icon: UIImage(systemName: "gear")) {
+            SettingsOption(title: "settings_agreement".localized, icon: UIImage(systemName: "gear")) {
                 guard let url = sogUrl, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             }
         ]))
         
-        models.append(SettingsSection(title: "Остальое", options: [
+        models.append(SettingsSection(title: "settings_others".localized, options: [
             SettingsOption(title: "Instagram", icon: UIImage(systemName: "gear")) {
                 guard let url = instaUrl, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
@@ -89,8 +89,9 @@ class SettingsViewController: UIViewController {
 
 // MARK: - Setup
 extension SettingsViewController {
+    
     private func setup() {
-        navigationItem.title = "Настройки"
+        navigationItem.title = "settings_title".localized
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"),
                style: .plain,
                target: self,

@@ -46,12 +46,14 @@ class TrueFalseTestView: UIView {
     private let transcriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "transcriptionLabel"
+        label.font = UIFont.preferredFont(forTextStyle: .body)
         return label
     }()
     
     private let translateLabel: UILabel = {
         let label = UILabel()
         label.text = "translateLabel"
+        label.font = UIFont.preferredFont(forTextStyle: .body, weight: .bold)
         return label
     }()
     
@@ -121,7 +123,7 @@ class TrueFalseTestView: UIView {
     private lazy var firstOptionButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .secondarySystemBackground
-        button.setTitle("Верно", for: [])
+        button.setTitle("test_true".localized, for: [])
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .caption2)
         button.titleLabel?.numberOfLines = 0
         button.titleLabel?.textAlignment = .center
@@ -136,7 +138,7 @@ class TrueFalseTestView: UIView {
     private lazy var secondOptionButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .secondarySystemBackground
-        button.setTitle("Неверно", for: [])
+        button.setTitle("test_false".localized, for: [])
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .caption2)
         button.titleLabel?.numberOfLines = 0
         button.titleLabel?.textAlignment = .center
@@ -192,7 +194,7 @@ class TrueFalseTestView: UIView {
         
         originalLabel.text = model.name.original
         transcriptionLabel.text = model.name.transcription
-        translateLabel.text = model.name.translate
+        translateLabel.text = model.name.translate + "?"
     }
     
     func restart() {
@@ -280,10 +282,10 @@ class TrueFalseTestView: UIView {
         transcriptionLabel.Top == originalLabel.Bottom + 16
         transcriptionLabel.centerHorizontally()
         
-        translateLabel.Top == transcriptionLabel.Bottom + 12
+        translateLabel.Top == transcriptionLabel.Bottom + 16
         translateLabel.centerHorizontally()
         
-        firstDividerView.Top == transcriptionLabel.Bottom + 48
+        firstDividerView.Top == translateLabel.Bottom + 48
         firstDividerView.fillHorizontally().height(1)
         
         counterStackView.Top == firstDividerView.Bottom + 16

@@ -14,6 +14,12 @@ class ZikrsViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var mainStackView: UIStackView!
     
+    @IBOutlet weak var firstTextLabel: UILabel!
+    
+    @IBOutlet weak var secondTextLabel: UILabel!
+    
+    @IBOutlet weak var thirdTextLabel: UILabel!
+    
     @IBOutlet weak var button: UIButton!
     
     // MARK: - LifeCycle
@@ -23,7 +29,7 @@ class ZikrsViewController: UIViewController {
     }
 
     @IBAction func donationButtonDidTapped(_ sender: Any) {
-        let alert = UIAlertController(title: "Поддержать проект", message: "Выберите сумму", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "donation_title".localized, message: "donation_description".localized, preferredStyle: .actionSheet)
         
         IAPManager.shared.products.forEach {
             guard let product = IAPManager.Product(rawValue: $0.productIdentifier) else {
@@ -39,7 +45,7 @@ class ZikrsViewController: UIViewController {
             }))
         }
         
-        alert.addAction(.init(title: "Отменить", style: .cancel))
+        alert.addAction(.init(title: "donation_cancel".localized, style: .cancel))
         present(alert, animated: true)
     }
 }
@@ -47,7 +53,12 @@ class ZikrsViewController: UIViewController {
 // MARK: - Setup
 extension ZikrsViewController {
     private func setup() {
-        navigationItem.title = "Зикры"
+        navigationItem.title = "tabs_zikrs".localized
+        
+        firstTextLabel.text = "zikrs_first_text".localized
+        secondTextLabel.text = "zikrs_second_text".localized
+        thirdTextLabel.text = "zikrs_third_text".localized
+        button.setTitle("zikrs_button_text".localized, for: [])
         
         mainStackView.layer.borderWidth = 1.0
         mainStackView.layer.borderColor = UIColor.systemGreen.cgColor
@@ -58,5 +69,6 @@ extension ZikrsViewController {
         
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
     }
 }

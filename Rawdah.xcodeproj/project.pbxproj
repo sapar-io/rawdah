@@ -34,9 +34,10 @@
 		524AEBF228438516006D823C /* StatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 524AEBF028438516006D823C /* StatisticsViewController.xib */; };
 		524AEBF328438516006D823C /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBF128438516006D823C /* StatisticsViewController.swift */; };
 		524AEBF628438525006D823C /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBF428438525006D823C /* SettingsCell.swift */; };
-		524AEBF728438525006D823C /* 56TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBF528438525006D823C /* 56TableViewCell.swift */; };
 		524AEBF92843852B006D823C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBF82843852B006D823C /* SettingsViewController.swift */; };
 		524AEBFC2843858E006D823C /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 524AEBFB2843858E006D823C /* Stevia */; };
+		526ED736284F828C005E4686 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED735284F828C005E4686 /* UIFont+Extensions.swift */; };
+		526ED737284F8EB5005E4686 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 526ED739284F8EB5005E4686 /* Localizable.strings */; };
 		52900CE6284EBD090023A998 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52900CE5284EBD090023A998 /* IAPManager.swift */; };
 		529E2DF62843832600974B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF52843832600974B1E /* AppDelegate.swift */; };
 		529E2DF82843832600974B1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF72843832600974B1E /* SceneDelegate.swift */; };
@@ -47,7 +48,6 @@
 		52BD8212284412A7000A9E61 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 52BD8211284412A7000A9E61 /* RealmSwift */; };
 		52BD8215284412B9000A9E61 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD8214284412B9000A9E61 /* RealmDB.swift */; };
 		52F102092846571400ED57B2 /* QuizTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F102082846571400ED57B2 /* QuizTestView.swift */; };
-		52F54A822843868000F2DC0A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52F54A812843868000F2DC0A /* Localizable.strings */; };
 		52F54A83284387CF00F2DC0A /* ScheherazadeNew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524AEBBF28438446006D823C /* ScheherazadeNew-Bold.ttf */; };
 		52F54A84284387CF00F2DC0A /* ScheherazadeNew-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524AEBBE28438446006D823C /* ScheherazadeNew-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -81,9 +81,12 @@
 		524AEBF028438516006D823C /* StatisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticsViewController.xib; sourceTree = "<group>"; };
 		524AEBF128438516006D823C /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		524AEBF428438525006D823C /* SettingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
-		524AEBF528438525006D823C /* 56TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 56TableViewCell.swift; sourceTree = "<group>"; };
 		524AEBF82843852B006D823C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		524AEBFD28438630006D823C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		526ED735284F828C005E4686 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		526ED738284F8EB5005E4686 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		526ED73A284F8EB6005E4686 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		526ED73B284F8EB7005E4686 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		52900CE5284EBD090023A998 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		529E2DF22843832600974B1E /* Rawdah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rawdah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E2DF52843832600974B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +98,6 @@
 		52BD8214284412B9000A9E61 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		52F102082846571400ED57B2 /* QuizTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTestView.swift; sourceTree = "<group>"; };
 		52F54A802843867800F2DC0A /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		52F54A812843868000F2DC0A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				524AEBBF28438446006D823C /* ScheherazadeNew-Bold.ttf */,
 				524AEBBE28438446006D823C /* ScheherazadeNew-Regular.ttf */,
+				526ED735284F828C005E4686 /* UIFont+Extensions.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -253,7 +256,6 @@
 		524AEBD3284384CD006D823C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				524AEBF528438525006D823C /* 56TableViewCell.swift */,
 				524AEBF428438525006D823C /* SettingsCell.swift */,
 			);
 			path = Views;
@@ -296,7 +298,7 @@
 				529E2DFE2843832700974B1E /* Assets.xcassets */,
 				529E2E002843832700974B1E /* LaunchScreen.storyboard */,
 				529E2E032843832700974B1E /* Info.plist */,
-				52F54A812843868000F2DC0A /* Localizable.strings */,
+				526ED739284F8EB5005E4686 /* Localizable.strings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -397,7 +399,7 @@
 				524AEBEF2843850F006D823C /* ZikrsViewController.xib in Resources */,
 				524AEBF228438516006D823C /* StatisticsViewController.xib in Resources */,
 				52F54A84284387CF00F2DC0A /* ScheherazadeNew-Regular.ttf in Resources */,
-				52F54A822843868000F2DC0A /* Localizable.strings in Resources */,
+				526ED737284F8EB5005E4686 /* Localizable.strings in Resources */,
 				524AEBDC284384D9006D823C /* NameCell.xib in Resources */,
 				524AEBDD284384D9006D823C /* SponserCell.xib in Resources */,
 				52F54A83284387CF00F2DC0A /* ScheherazadeNew-Bold.ttf in Resources */,
@@ -428,8 +430,8 @@
 				5218F0F6284E614B00DFDFF5 /* QuizProgressView.swift in Sources */,
 				524AEBEE2843850F006D823C /* ZikrsViewController.swift in Sources */,
 				5218F0F8284E71D000DFDFF5 /* TrueFalseTestView.swift in Sources */,
+				526ED736284F828C005E4686 /* UIFont+Extensions.swift in Sources */,
 				524AEBC32843844D006D823C /* UITableViewCell + Extensions.swift in Sources */,
-				524AEBF728438525006D823C /* 56TableViewCell.swift in Sources */,
 				524AEBC72843846D006D823C /* Names.swift in Sources */,
 				524AEBC52843844D006D823C /* UICollectionViewCell + Extensions.swift in Sources */,
 				529E2DF62843832600974B1E /* AppDelegate.swift in Sources */,
@@ -446,6 +448,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		526ED739284F8EB5005E4686 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526ED738284F8EB5005E4686 /* en */,
+				526ED73A284F8EB6005E4686 /* kk */,
+				526ED73B284F8EB7005E4686 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		529E2E002843832700974B1E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -587,6 +599,7 @@
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,6 +627,7 @@
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

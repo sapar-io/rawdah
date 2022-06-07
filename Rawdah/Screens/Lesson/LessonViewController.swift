@@ -52,16 +52,6 @@ class LessonViewController: UIViewController {
         return view
     }()
     
-//    private lazy var resetButton: UIImageView = {
-//        let imageView = UIImageView()
-//        imageView.image = UIImage(systemName: "arrow.triangle.2.circlepath")
-//        imageView.tintColor = .systemGreen
-//        imageView.isUserInteractionEnabled = true
-//        imageView.contentMode = .scaleAspectFit
-//        imageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(resetDidTapped)))
-//        return imageView
-//    }()
-    
     private lazy var playerButton: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "play")
@@ -82,7 +72,7 @@ class LessonViewController: UIViewController {
     private let descriptionTopLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
-        label.text = "Описание".uppercased()
+        label.text = "lesson_description".localized.uppercased()
         label.textAlignment = .center
         label.textColor = .secondaryLabel
         label.font = UIFont.preferredFont(forTextStyle: .caption1)
@@ -97,9 +87,16 @@ class LessonViewController: UIViewController {
         return label
     }()
     
+    private let footerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.secondarySystemBackground.withAlphaComponent(0.9)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private lazy var learnButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Выучить", for: [])
+        button.setTitle("lesson_mark_learned".localized, for: [])
         button.setImage(UIImage(systemName: "checkmark"), for: [])
         button.setTitleColor(.systemGreen, for: [])
         button.tintColor = .systemGreen
@@ -109,6 +106,18 @@ class LessonViewController: UIViewController {
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(learnedDidTapped), for: .touchUpInside)
         return button
+    }()
+    
+    let scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    
+    let contentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     // MARK: - LifeCycle
@@ -179,7 +188,7 @@ class LessonViewController: UIViewController {
         learnButton.setTitleColor(.white, for: [])
         learnButton.tintColor = .white
         learnButton.setImage(UIImage(systemName: "checkmark.seal.fill"), for: [])
-        learnButton.setTitle("Выучено", for: [])
+        learnButton.setTitle("lesson_learned".localized, for: [])
         learnButton.isEnabled = false
     }
 }
@@ -192,33 +201,48 @@ extension LessonViewController {
     }
     
     private func setupConstraints() {
-        view.subviews(originalLabel, transcriptionLabel, translateLabel, buttonsBackgroundView, descriptionTopLabel, descriptionLabel, learnButton)
+        view.subviews(scrollView, footerView)
         
-        originalLabel.fillHorizontally(padding: 16)
-        originalLabel.Top == view.safeAreaLayoutGuide.Top + 50
+        footerView.fillHorizontally().bottom(0)
+        footerView.Top == view.safeAreaLayoutGuide.Bottom - 88
         
+        footerView.subviews(learnButton)
+        learnButton.fillHorizontally(padding: 16).height(56).centerVertically()
+        
+        scrollView.Top == view.safeAreaLayoutGuide.Top
+        scrollView.centerHorizontally().bottom(0)
+        scrollView.Width == view.Width
+        
+        scrollView.subviews(contentView)
+        contentView.centerHorizontally()
+        contentView.Top == scrollView.Top
+        contentView.Bottom == scrollView.Bottom
+        contentView.Width == scrollView.Width
+        
+        contentView.subviews(originalLabel, transcriptionLabel, translateLabel, buttonsBackgroundView, descriptionTopLabel, descriptionLabel)
+
+        originalLabel.fillHorizontally(padding: 16).top(50)
+
         transcriptionLabel.fillHorizontally(padding: 16)
         transcriptionLabel.Top == originalLabel.Bottom + 36
-        
+
         translateLabel.fillHorizontally(padding: 16)
         translateLabel.Top == transcriptionLabel.Bottom + 12
-        
+
         buttonsBackgroundView.fillHorizontally(padding: 16).height(72)
         buttonsBackgroundView.Top == translateLabel.Bottom + 48
-        
+
         buttonsBackgroundView.subviews(buttonsStackView)
-        
+
         buttonsStackView.centerInContainer()
         playerButton.size(40)
-//        resetButton.size(40)
-        
-        learnButton.fillHorizontally(padding: 16).height(56)
-        learnButton.Bottom == view.safeAreaLayoutGuide.Bottom - 16
-        
+
         descriptionTopLabel.fillHorizontally(padding: 16)
         descriptionTopLabel.Top == buttonsBackgroundView.Bottom + 48
-        
+
         descriptionLabel.fillHorizontally(padding: 16)
         descriptionLabel.Top == descriptionTopLabel.Bottom + 16
+        
+        contentView.Bottom == descriptionLabel.Bottom - 150
     }
 }

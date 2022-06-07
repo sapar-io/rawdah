@@ -23,7 +23,7 @@ class QuizProgressView: UIView {
     // MARK: - Variables
     var questionNumber: Int = 0 {
         didSet {
-            counterLabel.text = "Вопрос \(questionNumber + 1) из 27"
+            counterLabel.text = String(format: "test_question_number".localized, String(questionNumber + 1), "27")
             let percentage = (step) * CGFloat(questionNumber) / 100
             progressView.widthConstraint?.constant = UIScreen.main.bounds.width * percentage
         }
@@ -40,7 +40,7 @@ class QuizProgressView: UIView {
     
     private let counterLabel: UILabel = {
         let label = UILabel()
-        label.text = "Вопрос 1 из 27"
+        label.text = String(format: "test_question_number".localized, "1", "27")
         label.font = UIFont.preferredFont(forTextStyle: .caption2)
         return label
     }()

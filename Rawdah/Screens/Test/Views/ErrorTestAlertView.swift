@@ -41,7 +41,7 @@ class ErrorTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Правильных ответов: 10"
+        label.text = ""
         return label
     }()
     
@@ -49,7 +49,7 @@ class ErrorTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Неправильных ответов: 2"
+        label.text = ""
         return label
     }()
     
@@ -57,7 +57,7 @@ class ErrorTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "«У Аллаха самые прекрасные имена. Посему взывайте к Нему посредством их» (Коран 7:180)."
+        label.text = "test_error_first_text".localized
         return label
     }()
     
@@ -65,7 +65,7 @@ class ErrorTestAlertView: UIView {
         let label = UILabel()
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.text = "Да поможет вам Аллах выучить все имена и успешно сдать тест для перехода к следующим именам"
+        label.text = "test_error_second_text".localized
         return label
     }()
     
@@ -78,8 +78,8 @@ class ErrorTestAlertView: UIView {
     
     private lazy var restartButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .white
-        button.setTitle("Пересдать тест", for: [])
+        button.backgroundColor = .systemBackground
+        button.setTitle("test_error_button".localized, for: [])
         button.setTitleColor(.systemGreen, for: [])
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .caption2)
         button.titleLabel?.numberOfLines = 0

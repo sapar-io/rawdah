@@ -33,7 +33,6 @@ final class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactio
     }
     
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        print("Products returned \(response.products.count)")
         self.products = response.products
         
         products.sort(by: { (p0, p1) -> Bool in

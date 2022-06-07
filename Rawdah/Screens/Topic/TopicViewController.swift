@@ -16,7 +16,6 @@ class TopicViewController: UIViewController {
     private var isFinishAllNames = true
     private var isPassedQuiz: Bool
     
-    
     // MARK: - Outlets
     private lazy var firstNameView: NameView = {
         let view = NameView()
@@ -112,12 +111,13 @@ class TopicViewController: UIViewController {
     private lazy var testButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemGreen
-        button.setTitle("Пройти тест", for: [])
+        button.setTitle("topic_test_button".localized, for: [])
         button.setTitleColor(.white, for: [])
         button.tintColor = .white
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(testDidTapped), for: .touchUpInside)
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
         return button
     }()
     
@@ -150,6 +150,9 @@ class TopicViewController: UIViewController {
     
     // MARK: - Helpers
     private func setupContent() {
+        isFinishAllNames = true
+        testButton.backgroundColor = .systemGreen
+        
         let nameViews = [firstNameView, secondNameView, thirdNameView, forthNameView, fifthNameView, sixNameView, sevenNameView, eightNameView, nineNameView]
         for i in 1...9 {
             let view = nameViews[i - 1]
@@ -162,17 +165,18 @@ class TopicViewController: UIViewController {
                 isFinishAllNames = false
                 testButton.backgroundColor = .gray
             }
-            
-            if isPassedQuiz {
-                testButton.setTitle("Пройден", for: [])
-                testButton.setImage(UIImage(systemName: "checkmark"), for: [])
-                testButton.isUserInteractionEnabled = false
-                testButton.backgroundColor = .white
-                testButton.setTitleColor(.systemGreen, for: [])
-                testButton.tintColor = .systemGreen
-                testButton.layer.borderWidth = 1.0
-                testButton.layer.borderColor = UIColor.systemGreen.cgColor
-            }
+        }
+        
+        if isPassedQuiz {
+            testButton.setTitle("topic_test_passed_button".localized, for: [])
+            testButton.setImage(UIImage(systemName: "checkmark"), for: [])
+            testButton.isUserInteractionEnabled = false
+            testButton.backgroundColor = .systemBackground
+            testButton.setTitleColor(.systemGreen, for: [])
+            testButton.tintColor = .systemGreen
+            testButton.layer.borderWidth = 1.0
+            testButton.layer.borderColor = UIColor.systemGreen.cgColor
+            return
         }
         
         if index.0 != 1 {
@@ -193,10 +197,10 @@ class TopicViewController: UIViewController {
     }
     
     private func showClosedAlert() {
-        let alert = UIAlertController(title: "Тест еще не доступен",
-                                      message: "Сначала выучите 9 имён на этой странице",
+        let alert = UIAlertController(title: "topic_test_close_title".localized,
+                                      message: "topic_test_close_description".localized,
                                       preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(.init(title: "Хорошо🙌🏻", style: .cancel))
+        alert.addAction(.init(title: "topic_test_close_button".localized, style: .cancel))
         present(alert, animated: true, completion: nil)
     }
     
@@ -253,7 +257,7 @@ class TopicViewController: UIViewController {
 extension TopicViewController {
     private func setup() {
         view.backgroundColor = .secondarySystemBackground
-        navigationItem.title = "\(index.0)-\(index.1) имена Аллаха"
+        navigationItem.title = "\(index.0)-\(index.1) \("topic_title".localized)"
         setupConstraints()
     }
     

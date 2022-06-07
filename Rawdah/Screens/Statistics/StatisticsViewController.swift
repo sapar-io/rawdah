@@ -11,6 +11,13 @@ class StatisticsViewController: UIViewController {
 
     // MARK: - Outlets
     @IBOutlet weak var mainStackView: UIStackView!
+    
+    @IBOutlet weak var firstTextLabel: UILabel!
+    
+    @IBOutlet weak var secondTextLabel: UILabel!
+    
+    @IBOutlet weak var thirdTextLabel: UILabel!
+    
     @IBOutlet weak var button: UIButton!
     
     // MARK: - LifeCycle
@@ -21,7 +28,7 @@ class StatisticsViewController: UIViewController {
 
     // MARK: - Actions
     @IBAction func donationButtonDidTapped(_ sender: Any) {
-        let alert = UIAlertController(title: "Поддержать проект", message: "Выберите сумму", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "donation_title".localized, message: "donation_description".localized, preferredStyle: .actionSheet)
         
         IAPManager.shared.products.forEach {
             guard let product = IAPManager.Product(rawValue: $0.productIdentifier) else {
@@ -37,15 +44,18 @@ class StatisticsViewController: UIViewController {
             }))
         }
         
-        alert.addAction(.init(title: "Отменить", style: .cancel))
+        alert.addAction(.init(title: "donation_cancel".localized, style: .cancel))
         present(alert, animated: true)
     }
-}
-
-// MARK: - Setup
-extension StatisticsViewController {
+    
+    // MARK: - Setup
     private func setup() {
-        navigationItem.title = "Интересное"
+        navigationItem.title = "tabs_interesting".localized
+        
+        firstTextLabel.text = "statistics_first_text".localized
+        secondTextLabel.text = "statistics_second_text".localized
+        thirdTextLabel.text = "statistics_third_text".localized
+        button.setTitle("statistics_button_text".localized, for: [])
         
         mainStackView.layer.borderWidth = 1.0
         mainStackView.layer.borderColor = UIColor.systemGreen.cgColor
@@ -56,5 +66,6 @@ extension StatisticsViewController {
         
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
     }
 }

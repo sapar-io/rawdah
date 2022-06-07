@@ -31,7 +31,7 @@ class TopicClosedView: UIView {
     
     private let firstText: UILabel = {
         let label = UILabel()
-        label.text = "Обучение идет по порядку, поэтому сначала пройдите предыдущие тесты"
+        label.text = "topic_close_first_text".localized
         label.textAlignment = .center
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.numberOfLines = 0
@@ -46,7 +46,7 @@ class TopicClosedView: UIView {
     
     private let secondText: UILabel = {
         let label = UILabel()
-        label.text = "Либо вы можете открыть все имена и тесты сразу, купив “полный доступ”"
+        label.text = "topic_close_second_text".localized
         label.textAlignment = .center
         label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.numberOfLines = 0
@@ -55,11 +55,12 @@ class TopicClosedView: UIView {
     
     private let button: UIButton = {
         let button = UIButton()
-        button.setTitle("Купить “полный доступ”", for: [])
+        button.setTitle("topic_close_button".localized, for: [])
         button.backgroundColor = .systemGreen
         button.setTitleColor(.white, for: [])
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
+        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
         return button
     }()
     
@@ -73,7 +74,7 @@ class TopicClosedView: UIView {
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 32, leading: 32, bottom: 32, trailing: 32)
         stackView.layer.cornerRadius = 24
         stackView.clipsToBounds = true
-        stackView.backgroundColor = .white
+        stackView.backgroundColor = .systemBackground
         return stackView
     }()
     

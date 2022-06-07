@@ -17,7 +17,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZikrsViewController" customModule="Rawdah" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="F3Y-ri-Ise" id="GSb-Os-SFZ"/>
+                <outlet property="firstTextLabel" destination="p7j-cn-lCK" id="BEP-RP-5Nt"/>
                 <outlet property="mainStackView" destination="yfu-Nw-A2A" id="H3y-ex-soN"/>
+                <outlet property="secondTextLabel" destination="gpF-R4-Usy" id="NV1-tP-QfT"/>
+                <outlet property="thirdTextLabel" destination="gsa-fP-eJM" id="mK9-jA-k2t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

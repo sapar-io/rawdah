@@ -17,7 +17,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatisticsViewController" customModule="Rawdah" customModuleProvider="target">
             <connections>
                 <outlet property="button" destination="Ra9-gK-vbV" id="zve-tu-fGx"/>
+                <outlet property="firstTextLabel" destination="bfd-CJ-jFV" id="PI5-Bk-XFS"/>
                 <outlet property="mainStackView" destination="CVj-oF-nP6" id="Gk1-6R-Tbt"/>
+                <outlet property="secondTextLabel" destination="M3U-Bt-SYW" id="gvU-Yg-EYp"/>
+                <outlet property="thirdTextLabel" destination="94w-Qp-53c" id="Mdz-Rq-qG9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
