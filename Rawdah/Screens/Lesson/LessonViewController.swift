@@ -197,17 +197,25 @@ extension LessonViewController {
     private func setup() {
         navigationItem.title = "\(name.number). \(name.transcription)"
         view.backgroundColor = .systemBackground
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .done, target: self, action: #selector(backButtonDidTapped))
         setupConstraints()
     }
     
+    @objc
+    private func backButtonDidTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     private func setupConstraints() {
-        view.subviews(scrollView, footerView)
+        view.subviews(scrollView, footerView, learnButton)
         
         footerView.fillHorizontally().bottom(0)
         footerView.Top == view.safeAreaLayoutGuide.Bottom - 88
         
         footerView.subviews(learnButton)
-        learnButton.fillHorizontally(padding: 16).height(56).centerVertically()
+        learnButton.fillHorizontally(padding: 16).height(56)
+        learnButton.Bottom == view.safeAreaLayoutGuide.Bottom - 16
         
         scrollView.Top == view.safeAreaLayoutGuide.Top
         scrollView.centerHorizontally().bottom(0)

@@ -62,6 +62,6 @@ class InitialViewController: UIViewController {
         
         sponserStackView.Bottom == view.safeAreaLayoutGuide.Bottom - 16
         sponserStackView.centerHorizontally()
-        sponserImageView.size(100)
+        sponserImageView.height(100).width(150)
     }
 }

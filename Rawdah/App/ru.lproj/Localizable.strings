@@ -74,6 +74,11 @@
 "donation_title" = "Поддержать проект";
 "donation_description" = "Выберите сумму";
 "donation_cancel" = "Отменить";
+"donation_wait" = "Пожалуйста подождите";
+"donation_success" = "Спасибо за поддержку проекта!";
+"donation_card" = "Карта (Visa | Kaspi)";
+"donation_copy" = "Скопировать";
+"donation_copied" = "Скопировано";
 
 // MARK: - NAMES
 // number: 1

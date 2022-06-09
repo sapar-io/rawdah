@@ -69,7 +69,7 @@ class NameView: UIView {
         originalLabel.text = name.original
         transcriptionLabel.text = "\(name.number). \(name.transcription)"
         translateLabel.text = name.translate
-        checkMarkImageView.isHidden = !isFinish
+        checkMarkImageView.tintColor = isFinish ? .systemGreen : .secondaryLabel.withAlphaComponent(0.7)
         
         layer.borderWidth = isFinish ? 1.0 : 0
         layer.borderColor = UIColor.systemGreen.cgColor

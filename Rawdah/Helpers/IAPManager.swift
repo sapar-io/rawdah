@@ -8,24 +8,29 @@
 import Foundation
 import StoreKit
 
+protocol IAPManagerDelegate: AnyObject {
+    func products(_ products: [SKProduct])
+}
+
 final class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactionObserver {
-    static let shared = IAPManager()
     
-    var products = [SKProduct]()
-    
-    private var completion: (() -> Void)?
-    
+    // MARK: - Models
     enum Product: String, CaseIterable {
-        case rawdah_499
         case rawdah_1490
-        case rawdah_3490
         case rawdah_4990
         case rawdah_15990
         case rawdah_49990
-        case rawdah_99990
-        case rawdah_499990
     }
     
+    // MARK: - Shared
+    static let shared = IAPManager()
+    
+    // MARK: - Variables
+    var products = [SKProduct]()
+    private var completion: (() -> Void)?
+    weak var delegate: IAPManagerDelegate?
+    
+    // MARK: - Functions
     public func fetchProducts() {
         let request = SKProductsRequest(productIdentifiers: Set(Product.allCases.compactMap({ $0.rawValue })))
         request.delegate = self
@@ -38,6 +43,8 @@ final class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactio
         products.sort(by: { (p0, p1) -> Bool in
             return p0.price.floatValue < p1.price.floatValue
         })
+        
+        delegate?.products(products)
     }
     
     func purchase(product: Product, completion: @escaping (() -> Void)) {
@@ -75,6 +82,15 @@ final class IAPManager: NSObject, SKProductsRequestDelegate, SKPaymentTransactio
             @unknown default:
                 break
             }
+        }
+    }
+    
+    // MARK: - Additional
+    func getProducts() {
+        if !products.isEmpty {
+            fetchProducts()
+        } else {
+            delegate?.products(products)
         }
     }
 }

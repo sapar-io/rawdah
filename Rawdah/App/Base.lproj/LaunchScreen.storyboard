@@ -24,20 +24,20 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="poO-P2-mMv">
-                                <rect key="frame" x="157" y="713" width="100" height="133"/>
+                                <rect key="frame" x="132" y="713" width="150" height="133"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTm-YP-vbm">
-                                        <rect key="frame" x="12.5" y="0.0" width="75.5" height="17"/>
+                                        <rect key="frame" x="37.5" y="0.0" width="75.5" height="17"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sponser" translatesAutoresizingMaskIntoConstraints="NO" id="lWD-7S-isV">
-                                        <rect key="frame" x="0.0" y="33" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="33" width="150" height="100"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="VZa-D6-bdD"/>
-                                            <constraint firstAttribute="width" constant="100" id="tVy-vT-IwY"/>
+                                            <constraint firstAttribute="width" constant="150" id="tVy-vT-IwY"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -61,7 +61,7 @@
     </scenes>
     <resources>
         <image name="logo" width="1024" height="1024"/>
-        <image name="sponser" width="576" height="707"/>
+        <image name="sponser" width="1240" height="898"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

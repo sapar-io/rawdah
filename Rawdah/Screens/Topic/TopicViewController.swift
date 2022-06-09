@@ -121,9 +121,10 @@ class TopicViewController: UIViewController {
         return button
     }()
     
-    private let closedView: TopicClosedView = {
+    private lazy var closedView: TopicClosedView = {
         let view = TopicClosedView()
         view.isHidden = true
+        view.delegate = self
         return view
     }()
     
@@ -258,7 +259,13 @@ extension TopicViewController {
     private func setup() {
         view.backgroundColor = .secondarySystemBackground
         navigationItem.title = "\(index.0)-\(index.1) \("topic_title".localized)"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .done, target: self, action: #selector(backButtonDidTapped))
         setupConstraints()
+    }
+    
+    @objc
+    private func backButtonDidTapped() {
+        navigationController?.popViewController(animated: true)
     }
     
     private func setupConstraints() {
@@ -279,5 +286,11 @@ extension TopicViewController {
         view.subviews(closedView)
         closedView.fillHorizontally().bottom(0)
         closedView.Top == view.safeAreaLayoutGuide.Top
+    }
+}
+
+extension TopicViewController: TopicClosedViewDelegate {
+    func closeTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }

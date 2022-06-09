@@ -16,10 +16,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZikrsViewController" customModule="Rawdah" customModuleProvider="target">
             <connections>
-                <outlet property="button" destination="F3Y-ri-Ise" id="GSb-Os-SFZ"/>
+                <outlet property="cardLabel" destination="HOV-hh-bUc" id="40Q-JV-kVN"/>
+                <outlet property="copyCardButton" destination="ErJ-N6-4Qy" id="aNv-wQ-5w1"/>
+                <outlet property="copyNameButton" destination="v9c-Ha-pFs" id="ZPv-oW-e2f"/>
                 <outlet property="firstTextLabel" destination="p7j-cn-lCK" id="BEP-RP-5Nt"/>
                 <outlet property="mainStackView" destination="yfu-Nw-A2A" id="H3y-ex-soN"/>
                 <outlet property="secondTextLabel" destination="gpF-R4-Usy" id="NV1-tP-QfT"/>
+                <outlet property="supportLabel" destination="K5W-J7-dvl" id="mSL-zb-yJ0"/>
                 <outlet property="thirdTextLabel" destination="gsa-fP-eJM" id="mK9-jA-k2t"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,55 +32,120 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="yfu-Nw-A2A">
-                    <rect key="frame" x="24" y="266.5" width="366" height="363.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yfu-Nw-A2A">
+                    <rect key="frame" x="12" y="266" width="390" height="364.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ان شاء اللهٰ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSZ-XM-JN2">
-                            <rect key="frame" x="0.0" y="0.0" width="366" height="65.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="65.5"/>
                             <fontDescription key="fontDescription" name="ScheherazadeNew-Regular" family="Scheherazade New" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здесь предусмотрены “Зикры”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7j-cn-lCK">
-                            <rect key="frame" x="0.0" y="89.5" width="366" height="17"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <rect key="frame" x="0.0" y="77.5" width="390" height="17"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpF-R4-Usy">
-                            <rect key="frame" x="0.0" y="130.5" width="366" height="36"/>
+                            <rect key="frame" x="0.0" y="106.5" width="390" height="36"/>
                             <string key="text">Вы можете принять участие 
 и поддержать проект</string>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" systemColor="systemGreenColor"/>
+                            <color key="highlightedColor" systemColor="systemGreenColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gte-xL-Xfw">
+                            <rect key="frame" x="0.0" y="154.5" width="390" height="57"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“О те, которые уверовали!  Если вы поможете Аллаху, то и Он поможет вам и утвердит ваши стопы”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-fP-eJM">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="36"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Коран 47:7)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FX-3t-rH0">
+                                    <rect key="frame" x="0.0" y="40" width="390" height="17"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zt4-yq-KCF">
+                            <rect key="frame" x="0.0" y="223.5" width="390" height="1"/>
+                            <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="SUd-Q5-hRm"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поддержать проект" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5W-J7-dvl">
+                            <rect key="frame" x="0.0" y="236.5" width="390" height="17"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" systemColor="systemGreenColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsa-fP-eJM">
-                            <rect key="frame" x="0.0" y="190.5" width="366" height="93"/>
-                            <string key="text">“О те, которые уверовали! 
-Если вы поможете Аллаху, 
-то и Он поможет вам 
-и утвердит ваши стопы”
-(Коран 47:7)</string>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Карта (Visa | Kaspi)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOV-hh-bUc">
+                            <rect key="frame" x="0.0" y="265.5" width="390" height="17"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-ri-Ise">
-                            <rect key="frame" x="0.0" y="307.5" width="366" height="56"/>
-                            <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="56" id="hzA-b8-JEj"/>
-                            </constraints>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Поддержать проект">
-                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                            </buttonConfiguration>
-                            <connections>
-                                <action selector="donationButtonDidTapped:" destination="-1" eventType="touchUpInside" id="575-Az-evs"/>
-                            </connections>
-                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HLD-mY-sIj">
+                            <rect key="frame" x="0.0" y="294.5" width="390" height="70"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0V-Qr-HoY">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="31"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4400 4301 9500 9441" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmw-1f-NCV">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="31"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-N6-4Qy">
+                                            <rect key="frame" x="240" y="0.0" width="150" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="h7s-Ep-1if"/>
+                                            </constraints>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Скопировать">
+                                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="cardCopyButtonDidTapped:" destination="-1" eventType="touchUpInside" id="FJP-Bj-3a7"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IdM-pB-Dsd">
+                                    <rect key="frame" x="0.0" y="39" width="390" height="31"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sapar Jumabekov" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6R-Il-nP2">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="31"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9c-Ha-pFs">
+                                            <rect key="frame" x="240" y="0.0" width="150" height="31"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="hfl-7J-74g"/>
+                                            </constraints>
+                                            <color key="tintColor" systemColor="systemGreenColor"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Скопировать">
+                                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="nameCopyButtonDidTapped:" destination="-1" eventType="touchUpInside" id="D2h-dJ-a2c"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </stackView>
@@ -85,8 +153,8 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yfu-Nw-A2A" secondAttribute="trailing" constant="24" id="8nd-Bp-vFh"/>
-                <constraint firstItem="yfu-Nw-A2A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="QKS-hn-d7y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yfu-Nw-A2A" secondAttribute="trailing" constant="12" id="8nd-Bp-vFh"/>
+                <constraint firstItem="yfu-Nw-A2A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="QKS-hn-d7y"/>
                 <constraint firstItem="yfu-Nw-A2A" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TXV-uf-3KG"/>
             </constraints>
             <point key="canvasLocation" x="139" y="153"/>
@@ -101,6 +169,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

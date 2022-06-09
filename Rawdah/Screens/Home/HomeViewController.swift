@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     private var learnedNames = [LearnedName]()
     private var passedQuizes = [PassedQuiz]()
     private var learnedNamesInTopic = [Int: Int]()
+    private var currentOpenTopicID: Int = 1
     
     // MARK: - Outlets
     private lazy var tableView: UITableView = {
@@ -35,6 +36,13 @@ class HomeViewController: UIViewController {
         return tableView
     }()
     
+    private lazy var languagesView: LanguagesView = {
+        let view = LanguagesView()
+        view.isHidden = true
+        view.delegate = self
+        return view
+    }()
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +53,19 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         learnedNames = realm.learnedNames()
         passedQuizes = realm.passedQuizes()
+        passedQuizes = passedQuizes.sorted(by: { $0.id < $1.id })
+        
+        if let id = passedQuizes.last?.id {
+            self.currentOpenTopicID = id + 1
+        }
+        
         calculateTopicPercentages()
         tableView.reloadData()
+        
+        if AppData.isFirstTime {
+            languagesView.isHidden = false
+            AppData.isFirstTime = false
+        }
     }
     
     func backToTopics() {
@@ -162,9 +181,11 @@ extension HomeViewController {
     }
     
     private func setupConstraints() {
-        view.subviews(tableView)
+        view.subviews(tableView, languagesView)
         tableView.Top == view.safeAreaLayoutGuide.Top
         tableView.fillHorizontally().bottom(0)
+        
+        languagesView.fillContainer()
     }
 }
 
@@ -189,7 +210,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let percentage = learnedInTopic * 100 / 10
             
             let cell = TopicCell.dequeue(tableView, for: indexPath)
-            cell.configure(id: indexPath.row, percentage: percentage)
+            cell.configure(id: indexPath.row, percentage: percentage, isActive: indexPath.row + 1 == currentOpenTopicID)
             return cell
             
         } else {
@@ -220,8 +241,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 // MARK: - Settings Delegate
-extension HomeViewController: SettingsViewControllerDelegate {
+extension HomeViewController: SettingsViewControllerDelegate, LanguagesViewDelegate {
     func languageChanged() {
+        UpdateNames()
         tabBarController?.navigationController?.popViewController(animated: true)
     }
 }

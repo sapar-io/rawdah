@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import StoreKit
+import SPAlert
 
 class StatisticsViewController: UIViewController {
 
@@ -18,34 +20,28 @@ class StatisticsViewController: UIViewController {
     
     @IBOutlet weak var thirdTextLabel: UILabel!
     
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var supportLabel: UILabel!
+    
+    @IBOutlet weak var cardLabel: UILabel!
+    
+    @IBOutlet weak var copyCardButton: UIButton!
+    
+    @IBOutlet weak var copyNameButton: UIButton!
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
-
-    // MARK: - Actions
-    @IBAction func donationButtonDidTapped(_ sender: Any) {
-        let alert = UIAlertController(title: "donation_title".localized, message: "donation_description".localized, preferredStyle: .actionSheet)
-        
-        IAPManager.shared.products.forEach {
-            guard let product = IAPManager.Product(rawValue: $0.productIdentifier) else {
-                return
-            }
-            
-            let currencyCode = $0.priceLocale.currencyCode
-            
-            alert.addAction(UIAlertAction(title: "\($0.price) \(currencyCode ?? "")", style: .default, handler: { (_) in
-                IAPManager.shared.purchase(product: product) {
-                    print("complete")
-                }
-            }))
-        }
-        
-        alert.addAction(.init(title: "donation_cancel".localized, style: .cancel))
-        present(alert, animated: true)
+    
+    @IBAction func cardCopyButtonDidTapped(_ sender: Any) {
+        UIPasteboard.general.string = "4400 4301 9500 9441"
+        SPAlert.present(title: "Скопировано", preset: .done)
+    }
+    
+    @IBAction func nameCopyButtonDidTapped(_ sender: Any) {
+        UIPasteboard.general.string = "Sapar Jumabekov"
+        SPAlert.present(title: "Скопировано", preset: .done)
     }
     
     // MARK: - Setup
@@ -55,17 +51,26 @@ class StatisticsViewController: UIViewController {
         firstTextLabel.text = "statistics_first_text".localized
         secondTextLabel.text = "statistics_second_text".localized
         thirdTextLabel.text = "statistics_third_text".localized
-        button.setTitle("statistics_button_text".localized, for: [])
+        supportLabel.text = "zikrs_button_text".localized
+        cardLabel.text = "donation_card".localized
+        copyCardButton.setTitle("donation_copy".localized, for: [])
+        copyNameButton.setTitle("donation_copy".localized, for: [])
         
         mainStackView.layer.borderWidth = 1.0
         mainStackView.layer.borderColor = UIColor.systemGreen.cgColor
         mainStackView.isLayoutMarginsRelativeArrangement = true
-        mainStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 32, leading: 32, bottom: 32, trailing: 32)
+        mainStackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 32, leading: 12, bottom: 32, trailing: 12)
         mainStackView.layer.cornerRadius = 24
         mainStackView.clipsToBounds = true
         
-        button.layer.cornerRadius = 12
-        button.clipsToBounds = true
-        button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
+        copyCardButton.backgroundColor = .secondarySystemBackground
+        copyCardButton.titleLabel?.font = .preferredFont(forTextStyle: .headline)
+        copyCardButton.clipsToBounds = true
+        copyCardButton.layer.cornerRadius = 6
+        
+        copyNameButton.backgroundColor = .secondarySystemBackground
+        copyNameButton.titleLabel?.font = .preferredFont(forTextStyle: .headline)
+        copyNameButton.clipsToBounds = true
+        copyNameButton.layer.cornerRadius = 6
     }
 }

@@ -64,20 +64,20 @@ class SettingsViewController: UIViewController {
     
     // MARK: - Private Methods
     private func configure() {
-        let polUrl = URL(string: "https://stackoverflow.com/")
-        let sogUrl = URL(string: "https://stackoverflow.com/")
-        let instaUrl = URL(string: "https://stackoverflow.com/")
+        let privacyPolicyURL = URL(string: "https://pages.flycricket.io/rawdah-1/privacy.html")
+        let termsURL = URL(string: "https://pages.flycricket.io/rawdah-1/terms.html")
+        let instaUrl = URL(string: "https://instagram.com/rawdah.app")
         
         models.append(SettingsSection(title: "settings_support".localized, options: [
             SettingsOption(title: "sapar@startcode.io", icon: UIImage(systemName: "envelope")) {
                 UIApplication.shared.open(URL(string: "mailto:sapar@startcode.io")!)
             },
             SettingsOption(title: "settings_policy".localized, icon: UIImage(systemName: "lock.shield")) {
-                guard let url = polUrl, UIApplication.shared.canOpenURL(url) else { return }
+                guard let url = privacyPolicyURL, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             },
             SettingsOption(title: "settings_agreement".localized, icon: UIImage(systemName: "doc.text")) {
-                guard let url = sogUrl, UIApplication.shared.canOpenURL(url) else { return }
+                guard let url = termsURL, UIApplication.shared.canOpenURL(url) else { return }
                 UIApplication.shared.open(url)
             }
         ]))

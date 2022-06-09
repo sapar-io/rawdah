@@ -36,10 +36,13 @@
 		524AEBF628438525006D823C /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBF428438525006D823C /* SettingsCell.swift */; };
 		524AEBF92843852B006D823C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBF82843852B006D823C /* SettingsViewController.swift */; };
 		524AEBFC2843858E006D823C /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 524AEBFB2843858E006D823C /* Stevia */; };
+		52511F782851F91D00F605FE /* SPAlert in Frameworks */ = {isa = PBXBuildFile; productRef = 52511F772851F91D00F605FE /* SPAlert */; };
 		526ED736284F828C005E4686 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED735284F828C005E4686 /* UIFont+Extensions.swift */; };
 		526ED737284F8EB5005E4686 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 526ED739284F8EB5005E4686 /* Localizable.strings */; };
 		526ED73D284F9D0F005E4686 /* Bundle+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED73C284F9D0F005E4686 /* Bundle+Extenstions.swift */; };
 		526ED741284F9F98005E4686 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED740284F9F98005E4686 /* InitialViewController.swift */; };
+		526ED743284FE5FC005E4686 /* LanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED742284FE5FC005E4686 /* LanguagesView.swift */; };
+		526ED745284FE918005E4686 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED744284FE918005E4686 /* AppData.swift */; };
 		52900CE6284EBD090023A998 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52900CE5284EBD090023A998 /* IAPManager.swift */; };
 		529E2DF62843832600974B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF52843832600974B1E /* AppDelegate.swift */; };
 		529E2DF82843832600974B1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF72843832600974B1E /* SceneDelegate.swift */; };
@@ -92,6 +95,8 @@
 		526ED73E284F9EE8005E4686 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		526ED73F284F9F02005E4686 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		526ED740284F9F98005E4686 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		526ED742284FE5FC005E4686 /* LanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesView.swift; sourceTree = "<group>"; };
+		526ED744284FE918005E4686 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		52900CE5284EBD090023A998 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		529E2DF22843832600974B1E /* Rawdah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rawdah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E2DF52843832600974B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52511F782851F91D00F605FE /* SPAlert in Frameworks */,
 				52BD8212284412A7000A9E61 /* RealmSwift in Frameworks */,
 				5218F0FB284E927700DFDFF5 /* SPConfetti in Frameworks */,
 				5218F105284EB16C00DFDFF5 /* StoreKit.framework in Frameworks */,
@@ -132,11 +138,13 @@
 			isa = PBXGroup;
 			children = (
 				524AEBBD2843843D006D823C /* Fonts */,
-				524AEBC22843844D006D823C /* UICollectionViewCell + Extensions.swift */,
-				524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */,
-				524AEBC12843844D006D823C /* String + Extensions.swift */,
+				52BD8214284412B9000A9E61 /* RealmDB.swift */,
+				526ED744284FE918005E4686 /* AppData.swift */,
 				52900CE5284EBD090023A998 /* IAPManager.swift */,
 				526ED73C284F9D0F005E4686 /* Bundle+Extenstions.swift */,
+				524AEBC12843844D006D823C /* String + Extensions.swift */,
+				524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */,
+				524AEBC22843844D006D823C /* UICollectionViewCell + Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 				524AEBD7284384D9006D823C /* SponserCell.xib */,
 				524AEBD5284384D9006D823C /* TopicCell.swift */,
 				524AEBD8284384D9006D823C /* TopicCell.xib */,
+				526ED742284FE5FC005E4686 /* LanguagesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,7 +296,6 @@
 		529E2DF42843832600974B1E /* Rawdah */ = {
 			isa = PBXGroup;
 			children = (
-				52BD8213284412AD000A9E61 /* Realm */,
 				529E2E092843833600974B1E /* App */,
 				524AEBBA2843840F006D823C /* Helpers */,
 				524AEBBB2843841B006D823C /* Models */,
@@ -307,14 +315,6 @@
 				526ED739284F8EB5005E4686 /* Localizable.strings */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		52BD8213284412AD000A9E61 /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				52BD8214284412B9000A9E61 /* RealmDB.swift */,
-			);
-			path = Realm;
 			sourceTree = "<group>";
 		};
 		52F1020A2846571800ED57B2 /* Views */ = {
@@ -350,6 +350,7 @@
 				52BD820F284412A7000A9E61 /* Realm */,
 				52BD8211284412A7000A9E61 /* RealmSwift */,
 				5218F0FA284E927700DFDFF5 /* SPConfetti */,
+				52511F772851F91D00F605FE /* SPAlert */,
 			);
 			productName = Rawdah;
 			productReference = 529E2DF22843832600974B1E /* Rawdah.app */;
@@ -385,6 +386,7 @@
 				524AEBFA2843858E006D823C /* XCRemoteSwiftPackageReference "Stevia" */,
 				52BD820E284412A7000A9E61 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				5218F0F9284E927700DFDFF5 /* XCRemoteSwiftPackageReference "SPConfetti" */,
+				52511F762851F91D00F605FE /* XCRemoteSwiftPackageReference "SPAlert" */,
 			);
 			productRefGroup = 529E2DF32843832600974B1E /* Products */;
 			projectDirPath = "";
@@ -423,11 +425,13 @@
 				52900CE6284EBD090023A998 /* IAPManager.swift in Sources */,
 				524AEBE3284384EB006D823C /* NameView.swift in Sources */,
 				524AEBF92843852B006D823C /* SettingsViewController.swift in Sources */,
+				526ED745284FE918005E4686 /* AppData.swift in Sources */,
 				52AF78F128452F3900DA424B /* TopicClosedView.swift in Sources */,
 				524AEBEB28438506006D823C /* TestViewController.swift in Sources */,
 				5218F0FF284E9BCE00DFDFF5 /* ErrorTestAlertView.swift in Sources */,
 				524AEBDA284384D9006D823C /* SponserCell.swift in Sources */,
 				524AEBC928438475006D823C /* TabBarController.swift in Sources */,
+				526ED743284FE5FC005E4686 /* LanguagesView.swift in Sources */,
 				524AEBDF284384D9006D823C /* NameCell.swift in Sources */,
 				524AEBDB284384D9006D823C /* TopicCell.swift in Sources */,
 				524AEBE5284384F1006D823C /* TopicViewController.swift in Sources */,
@@ -601,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 592GN4T7BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
@@ -619,7 +623,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -629,7 +633,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 592GN4T7BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
@@ -647,7 +651,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -691,6 +695,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		52511F762851F91D00F605FE /* XCRemoteSwiftPackageReference "SPAlert" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPAlert";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 		52BD820E284412A7000A9E61 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -711,6 +723,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 524AEBFA2843858E006D823C /* XCRemoteSwiftPackageReference "Stevia" */;
 			productName = Stevia;
+		};
+		52511F772851F91D00F605FE /* SPAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52511F762851F91D00F605FE /* XCRemoteSwiftPackageReference "SPAlert" */;
+			productName = SPAlert;
 		};
 		52BD820F284412A7000A9E61 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -143,6 +143,7 @@ class TestViewController: UIViewController {
     // MARK: - Setup
     private func setup() {
         navigationItem.title = "test_title".localized + "\(index.0) - \(index.1)"
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .done, target: self, action: #selector(backButtonDidTapped))
         view.backgroundColor = .systemBackground
         
         view.subviews(progressView, quizView, trueFalseTestView, nextButton, successView, errorView)
@@ -168,6 +169,11 @@ class TestViewController: UIViewController {
         errorView.Top == view.safeAreaLayoutGuide.Top
         errorView.fillContainer()
         errorView.Bottom == view.safeAreaLayoutGuide.Bottom
+    }
+    
+    @objc
+    private func backButtonDidTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }
 

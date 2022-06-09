@@ -17,6 +17,7 @@ class TopicCell: UITableViewCell {
     @IBOutlet weak var secondNameTranscriptionLabel: UILabel!
     @IBOutlet weak var percentageView: UIView!
     @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var lockImageView: UIImageView!
     
     // MARK: - Init
     override func awakeFromNib() {
@@ -34,7 +35,7 @@ class TopicCell: UITableViewCell {
     }
     
     // MARK: - Configure
-    func configure(id: Int, percentage: Int) {
+    func configure(id: Int, percentage: Int, isActive: Bool) {
         let index = getTopicNumerationFromTo(id: id)
         
         let firstName: Name = AllNames[index.0 - 1]
@@ -46,6 +47,18 @@ class TopicCell: UITableViewCell {
         secondNameOriginalLabel.text = lastName.original
         secondNameTranscriptionLabel.text = lastName.transcription
         percentageLabel.text = "\(percentage)%"
+        
+        if isActive {
+            backgroundColor = UIColor.systemGreen.withAlphaComponent(0.2)
+            percentageView.layer.borderColor = UIColor.secondarySystemFill.cgColor
+            lockImageView.isHidden = true
+            percentageLabel.isHidden = false
+        } else {
+            backgroundColor = .clear
+            percentageView.layer.borderColor = UIColor.systemFill.cgColor
+            lockImageView.isHidden = percentage != 0
+            percentageLabel.isHidden = percentage == 0
+        }
         
         switch percentage {
         case 90:
@@ -68,6 +81,5 @@ extension TopicCell {
         percentageView.layer.cornerRadius = 20
         percentageView.clipsToBounds = true
         percentageView.layer.borderWidth = 1.0
-        percentageView.layer.borderColor = UIColor.systemFill.cgColor
     }
 }

@@ -8,7 +8,14 @@
 import UIKit
 import Stevia
 
+protocol TopicClosedViewDelegate: AnyObject {
+    func closeTapped()
+}
+
 class TopicClosedView: UIView {
+    
+    // MARK: - Variables
+    weak var delegate: TopicClosedViewDelegate?
     
     // MARK: - Outlets
     private let originalLabel: UILabel = {
@@ -53,19 +60,20 @@ class TopicClosedView: UIView {
         return label
     }()
     
-    private let button: UIButton = {
+    private lazy var button: UIButton = {
         let button = UIButton()
-        button.setTitle("topic_close_button".localized, for: [])
+        button.setTitle("Назад".localized, for: [])
         button.backgroundColor = .systemGreen
         button.setTitleColor(.white, for: [])
         button.layer.cornerRadius = 12
         button.clipsToBounds = true
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .body, weight: .semibold)
+        button.addTarget(self, action: #selector(nextButtonDidTapped), for: .touchUpInside)
         return button
     }()
     
     private lazy var mainStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [firstTextStackView, secondText, button])
+        let stackView = UIStackView(arrangedSubviews: [firstTextStackView, button])
         stackView.axis = .vertical
         stackView.spacing = 24
         stackView.layer.borderWidth = 1.0
@@ -87,6 +95,12 @@ class TopicClosedView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+    }
+    
+    // MARK: - Actions
+    @objc
+    private func nextButtonDidTapped() {
+        delegate?.closeTapped()
     }
     
     // MARK: - Setup

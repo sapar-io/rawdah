@@ -12,68 +12,73 @@
 "tabs_interesting" = "Interesting";
 
 // MARK: - HOME
-"home_title" = "99 имен Аллаха";
+"home_title" = "99 names of Allah";
 
 // MARK: - TOPIC
-"topic_title" = " имена Аллаха";
-"topic_close_first_text" = "Обучение идет по порядку, поэтому сначала пройдите предыдущие тесты";
-"topic_close_second_text" = "Либо вы можете открыть все имена и тесты сразу, купив “полный доступ”";
-"topic_close_button" = "Купить “полный доступ”";
-"topic_test_button" = "Пройти тест";
-"topic_test_passed_button" = "Пройден";
-"topic_test_close_title" = "Тест еще не доступен";
-"topic_test_close_description" = "Сначала выучите 9 имён на этой странице";
-"topic_test_close_button" = "Хорошо🙌🏻";
+"topic_title" = " names of Allah";
+"topic_close_first_text" = "The learning takes place in order, so pass the previous tests first";
+"topic_close_second_text" = "Or you can open all names and tests at once by buying \"full access\"";
+"topic_close_button" = "Buy “full access”";
+"topic_test_button" = "Pass test";
+"topic_test_passed_button" = "Test passed";
+"topic_test_close_title" = "Test not available yet";
+"topic_test_close_description" = "First, learn the 9 names on this page";
+"topic_test_close_button" = "BISMILLAH 🙌🏻";
 
 // MARK: - LESSON
-"lesson_description" = "Описание";
-"lesson_mark_learned" = "Отметить выученным";
-"lesson_learned" = "Выучено";
+"lesson_description" = "Description";
+"lesson_mark_learned" = "Mark as learned";
+"lesson_learned" = "Learned";
 
 // MARK: - TEST
-"test_true" = "Верно";
-"test_false" = "Неверно";
-"test_question_number" = "Вопрос %@ из %@";
+"test_true" = "Correct";
+"test_false" = "Incorrect";
+"test_question_number" = "Question %@ of %@";
 
-"test_success_first_text" = "Да будет доволен вами Аллах и наградит вас благами в обоих мирах";
-"test_success_second_text" = "Вы успешно сдали тест и присоединились к 824’930 людям, которые выучили %@-%@ имена Аллаха";
-"test_success_third_text" = "Вам осталось выучить %@ имен";
+"test_success_first_text" = "May Allah be pleased with you and reward you with blessings in both worlds";
+"test_success_second_text" = "You have successfully passed the test and joined 824’930 people who have learned %@-%@ names of Allah";
+"test_success_third_text" = "You have %@ names left to learn";
 "test_success_next_button" = "Далее";
 
-"test_error_correct" = "Правильных ответов: %@";
-"test_error_mistake" = "Неправильных ответов: %@";
-"test_error_first_text" = "«У Аллаха самые прекрасные имена. Посему взывайте к Нему посредством их» (Коран 7:180).";
-"test_error_second_text" = "Да поможет вам Аллах выучить все имена и успешно сдать тест для перехода к следующим именам";
-"test_error_button" = "Пересдать тест";
+"test_error_correct" = "Correct answers: %@";
+"test_error_mistake" = "Incorrect answers: %@";
+"test_error_first_text" = "«Allah has the Most Beautiful Names. So call upon Him by them» (Quran 7:180).";
+"test_error_second_text" = "May Allah help you to learn all the names and successfully pass the test to move on to the next names";
+"test_error_button" = "Take the test again";
 
-"test_next_button" = "Следующий вопрос";
-"test_title" = "Тест по имёнам ";
-"test_finish" = "Завершить тест";
+"test_next_button" = "Next question";
+"test_title" = "Test by names ";
+"test_finish" = "Complete the test";
 
 // MARK: - SETTINGS
-"settings_title" = "Настройки";
-"settings_support" = "Поддержка";
-"settings_policy" = "Политика конфиденциальности";
-"settings_agreement" = "Пользовательское соглашение";
-"settings_others" = "Остальное";
-"settings_languages" = "Языки";
+"settings_title" = "Settings";
+"settings_support" = "Support";
+"settings_policy" = "Privacy Policy";
+"settings_agreement" = "Terms of Use";
+"settings_others" = "Other";
+"settings_languages" = "Languages";
 
 // MARK: - ZIKRS DONATION
-"zikrs_first_text" = "Здесь предусмотрены “Зикры”";
-"zikrs_second_text" = "Вы можете принять участие и поддержать проект";
-"zikrs_third_text" = "“О те, которые уверовали! Если вы поможете Аллаху, то и Он поможет вам и утвердит ваши стопы” (Коран 47:7)";
-"zikrs_button_text" = "Поддержать проект";
+"zikrs_first_text" = "Zikrs page is provided here";
+"zikrs_second_text" = "You can participate and support the project";
+"zikrs_third_text" = "“O believers! If you stand up for Allah, He will help you and make your steps firm” (Quran 47:7)";
+"zikrs_button_text" = "Support the project";
 
 // MARK: - STATISTICS DONATION
-"statistics_first_text" = "Здесь предусмотрено что-то интересное для улучшения знаний";
-"statistics_second_text" = "Можете поддержать проект и сделать себе подарок";
-"statistics_third_text" = "к Дню стояния (суда)";
-"statistics_button_text" = "Поддержать проект";
+"statistics_first_text" = "Something interesting is provided here to improve knowledge";
+"statistics_second_text" = "You can support the project and make yourself a gift";
+"statistics_third_text" = "for the Qiyama (Day of Judgement)";
+"statistics_button_text" = "Support the project";
 
 // MARK: - DONATION
-"donation_title" = "Поддержать проект";
-"donation_description" = "Выберите сумму";
-"donation_cancel" = "Отменить";
+"donation_title" = "Support the project";
+"donation_description" = "Choose an amount";
+"donation_cancel" = "Cancel";
+"donation_wait" = "Please, wait";
+"donation_success" = "Thanks for supporting the project!";
+"donation_card" = "Bank Card (Visa | Kaspi)";
+"donation_copy" = "Copy";
+"donation_copied" = "Copied";
 
 // MARK: - NAMES
 // number: 1
@@ -296,7 +301,7 @@
 "name_original_37" = "ٱلْكَبِيرُ";
 "name_transcription_37" = "Al-Kabeer";
 "name_translate_37" = "The Great One";
-"name_description_37" = "The Most Great, The Great, The One who is greater than everything in status. The Most Grand";
+"name_description_37" = "The Most Great, The Great, The One who is greater than everything in status.  The Most Grand";
 
 // number: 38
 "name_original_38" = "ٱلْحَفِيظُ";
@@ -669,4 +674,3 @@
 "name_transcription_99" = "As-Saboor";
 "name_translate_99" = "The Extensively Enduring One";
 "name_description_99" = "The Patient, The One who does not quickly punish the sinners. Allah has infinite patience. The Forbearing";
-
