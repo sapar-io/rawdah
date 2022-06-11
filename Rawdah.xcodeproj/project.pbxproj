@@ -12,7 +12,6 @@
 		5218F0FB284E927700DFDFF5 /* SPConfetti in Frameworks */ = {isa = PBXBuildFile; productRef = 5218F0FA284E927700DFDFF5 /* SPConfetti */; };
 		5218F0FD284E92EB00DFDFF5 /* SuccessTestAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218F0FC284E92EB00DFDFF5 /* SuccessTestAlertView.swift */; };
 		5218F0FF284E9BCE00DFDFF5 /* ErrorTestAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218F0FE284E9BCE00DFDFF5 /* ErrorTestAlertView.swift */; };
-		5218F105284EB16C00DFDFF5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5218F104284EB16C00DFDFF5 /* StoreKit.framework */; };
 		524AEBC32843844D006D823C /* UITableViewCell + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */; };
 		524AEBC42843844D006D823C /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBC12843844D006D823C /* String + Extensions.swift */; };
 		524AEBC52843844D006D823C /* UICollectionViewCell + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AEBC22843844D006D823C /* UICollectionViewCell + Extensions.swift */; };
@@ -43,7 +42,6 @@
 		526ED741284F9F98005E4686 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED740284F9F98005E4686 /* InitialViewController.swift */; };
 		526ED743284FE5FC005E4686 /* LanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED742284FE5FC005E4686 /* LanguagesView.swift */; };
 		526ED745284FE918005E4686 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526ED744284FE918005E4686 /* AppData.swift */; };
-		52900CE6284EBD090023A998 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52900CE5284EBD090023A998 /* IAPManager.swift */; };
 		529E2DF62843832600974B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF52843832600974B1E /* AppDelegate.swift */; };
 		529E2DF82843832600974B1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E2DF72843832600974B1E /* SceneDelegate.swift */; };
 		529E2DFF2843832700974B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529E2DFE2843832700974B1E /* Assets.xcassets */; };
@@ -62,7 +60,6 @@
 		5218F0F7284E71D000DFDFF5 /* TrueFalseTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseTestView.swift; sourceTree = "<group>"; };
 		5218F0FC284E92EB00DFDFF5 /* SuccessTestAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessTestAlertView.swift; sourceTree = "<group>"; };
 		5218F0FE284E9BCE00DFDFF5 /* ErrorTestAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTestAlertView.swift; sourceTree = "<group>"; };
-		5218F104284EB16C00DFDFF5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		524AEBBE28438446006D823C /* ScheherazadeNew-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ScheherazadeNew-Regular.ttf"; sourceTree = "<group>"; };
 		524AEBBF28438446006D823C /* ScheherazadeNew-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ScheherazadeNew-Bold.ttf"; sourceTree = "<group>"; };
 		524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell + Extensions.swift"; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 		526ED740284F9F98005E4686 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		526ED742284FE5FC005E4686 /* LanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesView.swift; sourceTree = "<group>"; };
 		526ED744284FE918005E4686 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
-		52900CE5284EBD090023A998 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		529E2DF22843832600974B1E /* Rawdah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rawdah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529E2DF52843832600974B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		529E2DF72843832600974B1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +113,6 @@
 				52511F782851F91D00F605FE /* SPAlert in Frameworks */,
 				52BD8212284412A7000A9E61 /* RealmSwift in Frameworks */,
 				5218F0FB284E927700DFDFF5 /* SPConfetti in Frameworks */,
-				5218F105284EB16C00DFDFF5 /* StoreKit.framework in Frameworks */,
 				52BD8210284412A7000A9E61 /* Realm in Frameworks */,
 				524AEBFC2843858E006D823C /* Stevia in Frameworks */,
 			);
@@ -129,7 +124,6 @@
 		5218F103284EB16C00DFDFF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5218F104284EB16C00DFDFF5 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,7 +134,6 @@
 				524AEBBD2843843D006D823C /* Fonts */,
 				52BD8214284412B9000A9E61 /* RealmDB.swift */,
 				526ED744284FE918005E4686 /* AppData.swift */,
-				52900CE5284EBD090023A998 /* IAPManager.swift */,
 				526ED73C284F9D0F005E4686 /* Bundle+Extenstions.swift */,
 				524AEBC12843844D006D823C /* String + Extensions.swift */,
 				524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */,
@@ -422,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52900CE6284EBD090023A998 /* IAPManager.swift in Sources */,
 				524AEBE3284384EB006D823C /* NameView.swift in Sources */,
 				524AEBF92843852B006D823C /* SettingsViewController.swift in Sources */,
 				526ED745284FE918005E4686 /* AppData.swift in Sources */,
@@ -605,7 +597,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 592GN4T7BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
@@ -633,7 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 592GN4T7BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
