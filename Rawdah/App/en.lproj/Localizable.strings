@@ -76,9 +76,6 @@
 "donation_cancel" = "Cancel";
 "donation_wait" = "Please, wait";
 "donation_success" = "Thanks for supporting the project!";
-"donation_card" = "Bank Card (Visa | Kaspi)";
-"donation_copy" = "Copy";
-"donation_copied" = "Copied";
 
 // MARK: - NAMES
 // number: 1

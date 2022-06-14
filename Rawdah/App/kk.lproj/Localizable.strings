@@ -76,9 +76,6 @@
 "donation_cancel" = "Болдырмау";
 "donation_wait" = "Өтінемін, күте тұрыңыз";
 "donation_success" = "Жобаны қолдағаныңыз үшін рахмет!";
-"donation_card" = "Карта (Visa | Kaspi)";
-"donation_copy" = "Көшіру";
-"donation_copied" = "Көшірілген";
 
 // MARK: - NAMES
 // number: 1

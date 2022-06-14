@@ -20,13 +20,7 @@ class StatisticsViewController: UIViewController {
     
     @IBOutlet weak var thirdTextLabel: UILabel!
     
-    @IBOutlet weak var supportLabel: UILabel!
-    
-    @IBOutlet weak var cardLabel: UILabel!
-    
     @IBOutlet weak var copyCardButton: UIButton!
-    
-    @IBOutlet weak var copyNameButton: UIButton!
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -35,13 +29,9 @@ class StatisticsViewController: UIViewController {
     }
     
     @IBAction func cardCopyButtonDidTapped(_ sender: Any) {
-        UIPasteboard.general.string = "4400 4301 9500 9441"
-        SPAlert.present(title: "Скопировано", preset: .done)
-    }
-    
-    @IBAction func nameCopyButtonDidTapped(_ sender: Any) {
-        UIPasteboard.general.string = "Sapar Jumabekov"
-        SPAlert.present(title: "Скопировано", preset: .done)
+        let url = URL(string: "https://sapa.notion.site/Donate-Rawdah-99-names-of-Allah-a1c97879d6a848e0b681abf743fe7458")
+        guard let url = url, UIApplication.shared.canOpenURL(url) else { return }
+        UIApplication.shared.open(url)
     }
     
     // MARK: - Setup
@@ -51,10 +41,7 @@ class StatisticsViewController: UIViewController {
         firstTextLabel.text = "statistics_first_text".localized
         secondTextLabel.text = "statistics_second_text".localized
         thirdTextLabel.text = "statistics_third_text".localized
-        supportLabel.text = "zikrs_button_text".localized
-        cardLabel.text = "donation_card".localized
-        copyCardButton.setTitle("donation_copy".localized, for: [])
-        copyNameButton.setTitle("donation_copy".localized, for: [])
+        copyCardButton.setTitle("zikrs_button_text".localized, for: [])
         
         mainStackView.layer.borderWidth = 1.0
         mainStackView.layer.borderColor = UIColor.systemGreen.cgColor
@@ -67,10 +54,5 @@ class StatisticsViewController: UIViewController {
         copyCardButton.titleLabel?.font = .preferredFont(forTextStyle: .headline)
         copyCardButton.clipsToBounds = true
         copyCardButton.layer.cornerRadius = 6
-        
-        copyNameButton.backgroundColor = .secondarySystemBackground
-        copyNameButton.titleLabel?.font = .preferredFont(forTextStyle: .headline)
-        copyNameButton.clipsToBounds = true
-        copyNameButton.layer.cornerRadius = 6
     }
 }

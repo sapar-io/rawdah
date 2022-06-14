@@ -16,13 +16,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatisticsViewController" customModule="Rawdah" customModuleProvider="target">
             <connections>
-                <outlet property="cardLabel" destination="kvc-h1-wcK" id="0Wy-Mm-fIV"/>
                 <outlet property="copyCardButton" destination="fTS-Ft-BSF" id="IWd-YZ-L4C"/>
-                <outlet property="copyNameButton" destination="fnq-rG-6vf" id="jPk-N3-2E0"/>
                 <outlet property="firstTextLabel" destination="bfd-CJ-jFV" id="PI5-Bk-XFS"/>
                 <outlet property="mainStackView" destination="CVj-oF-nP6" id="Gk1-6R-Tbt"/>
                 <outlet property="secondTextLabel" destination="M3U-Bt-SYW" id="gvU-Yg-EYp"/>
-                <outlet property="supportLabel" destination="MT5-IZ-qtU" id="Oug-c5-3X5"/>
                 <outlet property="thirdTextLabel" destination="94w-Qp-53c" id="Mdz-Rq-qG9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CVj-oF-nP6">
-                    <rect key="frame" x="12" y="242" width="390" height="412.5"/>
+                    <rect key="frame" x="12" y="290.5" width="390" height="315.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ان شاء اللهٰ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpp-JW-wbs">
                             <rect key="frame" x="0.0" y="0.0" width="390" height="65.5"/>
@@ -83,73 +80,20 @@
                                 <constraint firstAttribute="height" constant="1" id="AVE-Pb-Gdi"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Поддержать проект" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT5-IZ-qtU">
-                            <rect key="frame" x="0.0" y="284.5" width="390" height="17"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                            <color key="textColor" systemColor="systemGreenColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Карта (Visa | Kaspi)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvc-h1-wcK">
-                            <rect key="frame" x="0.0" y="313.5" width="390" height="17"/>
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LF0-lV-VD3">
-                            <rect key="frame" x="0.0" y="342.5" width="390" height="70"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zl-F7-vUH">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="31"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4400 4301 9500 9441" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-zP-deE">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="31"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTS-Ft-BSF">
-                                            <rect key="frame" x="240" y="0.0" width="150" height="31"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="150" id="Fsa-7Q-xzL"/>
-                                            </constraints>
-                                            <color key="tintColor" systemColor="systemGreenColor"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title="Скопировать">
-                                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                            </buttonConfiguration>
-                                            <connections>
-                                                <action selector="cardCopyButtonDidTapped:" destination="-1" eventType="touchUpInside" id="6nf-Oo-Po2"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erK-Qa-ziQ">
-                                    <rect key="frame" x="0.0" y="39" width="390" height="31"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sapar Jumabekov" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAO-MY-0l1">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="31"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnq-rG-6vf">
-                                            <rect key="frame" x="240" y="0.0" width="150" height="31"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="150" id="Tgq-0I-qNo"/>
-                                            </constraints>
-                                            <color key="tintColor" systemColor="systemGreenColor"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title="Скопировать">
-                                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                            </buttonConfiguration>
-                                            <connections>
-                                                <action selector="nameCopyButtonDidTapped:" destination="-1" eventType="touchUpInside" id="gi6-TY-yRq"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </stackView>
-                            </subviews>
-                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTS-Ft-BSF">
+                            <rect key="frame" x="0.0" y="284.5" width="390" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Fsa-7Q-xzL"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="systemGreenColor"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Поддержать проект">
+                                <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="cardCopyButtonDidTapped:" destination="-1" eventType="touchUpInside" id="6nf-Oo-Po2"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </stackView>
