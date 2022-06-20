@@ -59,23 +59,15 @@
 "settings_languages" = "Languages";
 
 // MARK: - ZIKRS DONATION
-"zikrs_first_text" = "Zikrs page is provided here";
-"zikrs_second_text" = "You can participate and support the project";
-"zikrs_third_text" = "“O believers! If you stand up for Allah, He will help you and make your steps firm” (Quran 47:7)";
-"zikrs_button_text" = "Support the project";
+"zikrs_first_text" = "Zikrs will be here.\nDevelopment in progress.";
 
 // MARK: - STATISTICS DONATION
-"statistics_first_text" = "Something interesting is provided here to improve knowledge";
-"statistics_second_text" = "You can support the project and make yourself a gift";
-"statistics_third_text" = "for the Qiyama (Day of Judgement)";
-"statistics_button_text" = "Support the project";
+"statistics_first_text" = "Something interesting is provided here to improve knowledge.\nDevelopment in progress.";
 
 // MARK: - DONATION
-"donation_title" = "Support the project";
-"donation_description" = "Choose an amount";
-"donation_cancel" = "Cancel";
-"donation_wait" = "Please, wait";
-"donation_success" = "Thanks for supporting the project!";
+"donate_title" = "Like the project?";
+"donate_description" = "You can treat the developers to coffee ;)";
+"donate_button" = "Get a coffee";
 
 // MARK: - NAMES
 // number: 1

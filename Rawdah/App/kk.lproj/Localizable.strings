@@ -59,23 +59,15 @@
 "settings_languages" = "Тілдер";
 
 // MARK: - ZIKRS DONATION
-"zikrs_first_text" = "Мұнда “зікірлер” қарастырылған";
-"zikrs_second_text" = "Сіз қатысып жобаны қолдай аласыз";
-"zikrs_third_text" = "“Әй мүміндер! Егер Аллаға (дініне) жәрдем етсеңдер, Ол сендерге жәрдем етіп, табандарыңды бекітеді.” (Құран 47:7)";
-"zikrs_button_text" = "Жобаны қолдау";
+"zikrs_first_text" = "Зікірлер осында болады.\nӘзірлеу жүріп жатыр.";
 
 // MARK: - STATISTICS DONATION
-"statistics_first_text" = "Мұнда білімді жақсарту үшін қызықты нәрселер қарастырылған";
-"statistics_second_text" = "Жобаны қолдап өзіңізге сыйлық жасаңыз";
-"statistics_third_text" = "Қиямет күніне";
-"statistics_button_text" = "Жобаны қолдау";
+"statistics_first_text" = "Мұнда білімді жақсарту үшін қызықты нәрселер қарастырылған.\nӘзірлеу жүріп жатыр.";
 
 // MARK: - DONATION
-"donation_title" = "Жобаны қолдау";
-"donation_description" = "Сумманы таңдау";
-"donation_cancel" = "Болдырмау";
-"donation_wait" = "Өтінемін, күте тұрыңыз";
-"donation_success" = "Жобаны қолдағаныңыз үшін рахмет!";
+"donate_title" = "Жоба ұнады ма?";
+"donate_description" = "Сіз әзірлеушілерді кофемен сыйлай аласыз;)";
+"donate_button" = "Кофе сатып алыңыз";
 
 // MARK: - NAMES
 // number: 1

@@ -37,7 +37,6 @@ class TopicCell: UITableViewCell {
     // MARK: - Configure
     func configure(id: Int, percentage: Int, isActive: Bool) {
         let index = getTopicNumerationFromTo(id: id)
-        
         let firstName: Name = AllNames[index.0 - 1]
         let lastName: Name = AllNames[index.1 - 1]
         

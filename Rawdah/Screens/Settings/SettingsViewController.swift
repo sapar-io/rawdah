@@ -100,6 +100,13 @@ class SettingsViewController: UIViewController {
                 UIApplication.shared.open(url)
             }
         ]))
+        
+        models.append(SettingsSection(title: "donate_title".localized, options: [
+            SettingsOption(title: "donate_button".localized, icon: UIImage(systemName: "star.fill")) {
+                self.donateDidTapped()
+            }
+        ]))
+        
         tableView.reloadData()
     }
     
@@ -107,6 +114,10 @@ class SettingsViewController: UIViewController {
         dismiss(animated: true)
         Bundle.setLanguage(lang: lang)
         delegate?.languageChanged()
+    }
+    
+    private func donateDidTapped() {
+        print("donate")
     }
 }
 
@@ -126,9 +137,8 @@ extension SettingsViewController {
     
     private func setupConstraints() {
         view.subviews(tableView)
-        tableView.fillHorizontally()
+        tableView.fillHorizontally().bottom(0)
         tableView.Top == view.safeAreaLayoutGuide.Top
-        tableView.Bottom == view.safeAreaLayoutGuide.Bottom
     }
 }
 

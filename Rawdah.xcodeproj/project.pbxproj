@@ -50,6 +50,9 @@
 		52BD8210284412A7000A9E61 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 52BD820F284412A7000A9E61 /* Realm */; };
 		52BD8212284412A7000A9E61 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 52BD8211284412A7000A9E61 /* RealmSwift */; };
 		52BD8215284412B9000A9E61 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD8214284412B9000A9E61 /* RealmDB.swift */; };
+		52D654A8285CC5C50023637F /* DonateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D654A6285CC5C50023637F /* DonateCell.swift */; };
+		52D654A9285CC5C50023637F /* DonateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52D654A7285CC5C50023637F /* DonateCell.xib */; };
+		52D9873428607B0900743793 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9873328607B0900743793 /* IAPManager.swift */; };
 		52F102092846571400ED57B2 /* QuizTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F102082846571400ED57B2 /* QuizTestView.swift */; };
 		52F54A83284387CF00F2DC0A /* ScheherazadeNew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524AEBBF28438446006D823C /* ScheherazadeNew-Bold.ttf */; };
 		52F54A84284387CF00F2DC0A /* ScheherazadeNew-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524AEBBE28438446006D823C /* ScheherazadeNew-Regular.ttf */; };
@@ -102,6 +105,9 @@
 		529E2E032843832700974B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52AF78F028452F3900DA424B /* TopicClosedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicClosedView.swift; sourceTree = "<group>"; };
 		52BD8214284412B9000A9E61 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
+		52D654A6285CC5C50023637F /* DonateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateCell.swift; sourceTree = "<group>"; };
+		52D654A7285CC5C50023637F /* DonateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonateCell.xib; sourceTree = "<group>"; };
+		52D9873328607B0900743793 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		52F102082846571400ED57B2 /* QuizTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +144,7 @@
 				524AEBC12843844D006D823C /* String + Extensions.swift */,
 				524AEBC02843844D006D823C /* UITableViewCell + Extensions.swift */,
 				524AEBC22843844D006D823C /* UICollectionViewCell + Extensions.swift */,
+				52D9873328607B0900743793 /* IAPManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -247,6 +254,8 @@
 				524AEBD7284384D9006D823C /* SponserCell.xib */,
 				524AEBD5284384D9006D823C /* TopicCell.swift */,
 				524AEBD8284384D9006D823C /* TopicCell.xib */,
+				52D654A6285CC5C50023637F /* DonateCell.swift */,
+				52D654A7285CC5C50023637F /* DonateCell.xib */,
 				526ED742284FE5FC005E4686 /* LanguagesView.swift */,
 			);
 			path = Views;
@@ -397,6 +406,7 @@
 			files = (
 				529E2E022843832700974B1E /* LaunchScreen.storyboard in Resources */,
 				529E2DFF2843832700974B1E /* Assets.xcassets in Resources */,
+				52D654A9285CC5C50023637F /* DonateCell.xib in Resources */,
 				524AEBEF2843850F006D823C /* ZikrsViewController.xib in Resources */,
 				524AEBF228438516006D823C /* StatisticsViewController.xib in Resources */,
 				52F54A84284387CF00F2DC0A /* ScheherazadeNew-Regular.ttf in Resources */,
@@ -421,6 +431,7 @@
 				52AF78F128452F3900DA424B /* TopicClosedView.swift in Sources */,
 				524AEBEB28438506006D823C /* TestViewController.swift in Sources */,
 				5218F0FF284E9BCE00DFDFF5 /* ErrorTestAlertView.swift in Sources */,
+				52D654A8285CC5C50023637F /* DonateCell.swift in Sources */,
 				524AEBDA284384D9006D823C /* SponserCell.swift in Sources */,
 				524AEBC928438475006D823C /* TabBarController.swift in Sources */,
 				526ED743284FE5FC005E4686 /* LanguagesView.swift in Sources */,
@@ -438,6 +449,7 @@
 				526ED73D284F9D0F005E4686 /* Bundle+Extenstions.swift in Sources */,
 				524AEBC72843846D006D823C /* Names.swift in Sources */,
 				524AEBC52843844D006D823C /* UICollectionViewCell + Extensions.swift in Sources */,
+				52D9873428607B0900743793 /* IAPManager.swift in Sources */,
 				529E2DF62843832600974B1E /* AppDelegate.swift in Sources */,
 				529E2DF82843832600974B1E /* SceneDelegate.swift in Sources */,
 				524AEBC42843844D006D823C /* String + Extensions.swift in Sources */,
@@ -597,7 +609,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 592GN4T7BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawdah/App/Info.plist;
@@ -625,7 +637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 592GN4T7BY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Rawdah/App/Info.plist;

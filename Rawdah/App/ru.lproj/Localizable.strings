@@ -59,23 +59,15 @@
 "settings_languages" = "Языки";
 
 // MARK: - ZIKRS DONATION
-"zikrs_first_text" = "Здесь предусмотрены “Зикры”";
-"zikrs_second_text" = "Вы можете принять участие и поддержать проект";
-"zikrs_third_text" = "“О те, которые уверовали! Если вы поможете Аллаху, то и Он поможет вам и утвердит ваши стопы” (Коран 47:7)";
-"zikrs_button_text" = "Поддержать проект";
+"zikrs_first_text" = "Здесь будут “Зикры”.\nРазработка в процессе.";
 
 // MARK: - STATISTICS DONATION
-"statistics_first_text" = "Здесь предусмотрено что-то интересное для улучшения знаний";
-"statistics_second_text" = "Можете поддержать проект и сделать себе подарок";
-"statistics_third_text" = "к Дню стояния (суда)";
-"statistics_button_text" = "Поддержать проект";
+"statistics_first_text" = "Здесь предусмотрено что-то интересное для улучшения знаний.\nРазработка в процессе.";
 
 // MARK: - DONATION
-"donation_title" = "Поддержать проект";
-"donation_description" = "Выберите сумму";
-"donation_cancel" = "Отменить";
-"donation_wait" = "Пожалуйста подождите";
-"donation_success" = "Спасибо за поддержку проекта!";
+"donate_title" = "Нравится проект?";
+"donate_description" = "Вы можете угостить разработчиков кофем;)";
+"donate_button" = "Угостить разработчиков";
 
 // MARK: - NAMES
 // number: 1

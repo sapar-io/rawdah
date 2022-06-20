@@ -12,7 +12,6 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         selectedIndex = 2
-        
         delegate = self
     }
     

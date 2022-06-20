@@ -175,7 +175,7 @@ extension HomeViewController {
                                                            action: #selector(settingDidTapped))
         TopicCell.register(for: tableView)
         NameCell.register(for: tableView)
-        SponserCell.register(for: tableView)
+        DonateCell.register(for: tableView)
         
         setupConstraints()
     }
@@ -202,7 +202,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if maxLenght == indexPath.row {
             
             // if its last cell
-            return SponserCell.dequeue(tableView, for: indexPath)
+            return DonateCell.dequeue(tableView, for: indexPath)
             
         } else if currentContent == .topics {
             
